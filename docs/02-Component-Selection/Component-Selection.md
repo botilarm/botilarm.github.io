@@ -1,58 +1,70 @@
 ---
-title: Component Selection Example
+title: Component Selection
 ---
 
-## Examples
+## Components
+**9V 3A AC/DC Adapter**
+1. WR9HD1333CCP-F(R6B) AC/DC WALL MOUNT ADAPTER 9V 12W
 
-### Style 1
+    ![](ac_adapter1.jpg)
 
-> This is the example found in the assignment, uses more html
+    * $6.23/each
+    * [link to product](https://www.digikey.com/en/products/detail/globtek-inc/WR9HD1333CCP-F-R6B/13245472)
 
-*Table 1: Example component selection*
+    | Pros                                                          | Cons                                                                                           |
+    | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+    | Meets power requirements                                      | Only 1.33A output may not be enough to charge device and power circuit.                        |
+    | Can connect to barrel jack                                    |
+    | Shipped from within US                                        |
+    | Includes datasheet                                            |
 
-**External Clock Module**
+2. Yetaida 9V 3A Power Supply Adapter, 
 
-| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
-| ![](image3.png)<br>\* Option 2. <br>\* CTX936TR-ND surface mount oscillator <br>\* $1/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
+    ![](ac_adapter2.png)
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+    * $6.70/each
+    * [Link to product](https://a.co/d/h2dbedt)
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+    | Pros                                                              | Cons                                                                           |
+    | ----------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+    | Meets voltage and current needs                                   | Some reviewers claim it cannot handle 3A load as advertised.                   |
+    | Includes female connector so barrel jack is not necessary         | No datasheet provided                                                          |
+    | Shipped by amazon in a few days                                   |
 
-### Style 2
+3. SLE36S0903B01 AC/DC WALL MOUNT ADAPTER 9V 27W
 
-> Also acceptable, more markdown friendly
+    ![](ac_adapter3.jpg)
 
-**External Clock Module**
+    * $17.86/each
+    * [Link to product](https://www.digikey.com/en/products/detail/sl-power-advanced-energy/SLE36S0903B01/11570443)
 
-1. XC1259TR-ND surface mount crystal
+    | Pros                                                              | Cons                                                                           |
+    | ----------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+    | Interchangable input connector for use in other countries         | 14 week lead time                                                              |
+    | Meets voltage and current needs                                   |
+    | Includes datasheet                                                |
 
-    ![](image1.png)
+**Choice:** class provided 9V 3A AC/DC adapter
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+**Rationale:** Adapter is already compatible with class provided barrel jack and doesn't require any additional purchases.
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+**Current sensor**
+1. ALLEGRO CURRENT SENSOR HE/OL 31A 12-QFN (ACS711KEXLT-31AB-T)
 
-1. CTX936TR-ND surface mount oscillator
+    ![](current_sensor1.png)
 
-    ![](image3.png)
+    * $1.02/each
+    * [link to product](https://www.digikey.com/en/products/detail/allegro-microsystems/ACS711KEXLT-31AB-T/3868195?s=N4IgTCBcDaIIIGEDKB2AjGg0gUQBoBkAVAWgGY04AhYwkAXQF8g)
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+    | Pros                                                          | Cons                                                                                           |
+    | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+    | Very small package                                            | Significantly more cost effective to buy in bulk                        |
+    | Senses current up to 31A                                      | How to analyze and filter signal is not as well understood. |
+    | Operates on 5V                                                |
+    | Through hole compatible pins pins                             |
 
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+2. 
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+**Segment display**
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+**Pushbutton**
