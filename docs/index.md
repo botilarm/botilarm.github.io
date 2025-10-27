@@ -1,14 +1,4 @@
 # Home
-- [ ] unchecked box
-- [x] checked box  
-* *italics*
-* **bold**
-## table of root vegetables
-name   | description 
--------|-------------
-Turnip |white-skinned
-Potato |tuber        
-
 ---
 title: Welcome
 tags:
@@ -16,33 +6,26 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6">(Your Name) Datasheet</font><br>
+<font size= "6">Armando Botiller Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8">Spark Guard</font><br>
 for<br>
-<font size= "5"> Team ### </font><br>
+<font size= "5"> Team 203 </font><br>
 
-**Submission: month, DD, YYYY**
+**Submission: 10-27-2025**
 </center>
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+* The purpose of this datasheet is to outline the functionality of the power/energy consumption requirement of Spark Guard, a smart plug with multiple AC outlets and USB charging ports, all individually monitored and controlled for home automation and accurate power monitoring. 
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
-
-
-### My Contribution
-
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
-
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
-
-For all the sections
+* Spark Guard is intended to provide a safe, secure, and indoors/outdoors use smart power strip with less connectivity issues. Along with these requirements power monitoring is important. For this design we've decided to have a display on the device itself that shows each USB port and AC outlet's energy consumption over time. The user will also be able to switch between power and energy use display.
+    * [link to project](https://egr304-203.github.io/sparkguard/)
+* This individual datasheet describes this function in more detail with a block diagram, component selection, and electrical schematic which is linked below.
 
 ### Links
 1. [Block Diagram](https://botilarm.github.io/01-Block-Diagram/Block-Diagram/)
+2. [Component Selection](https://botilarm.github.io/02-Component-Selection/Component-Selection/)
+3. [Schematic](https://botilarm.github.io/04-Schematic/schematic/)
