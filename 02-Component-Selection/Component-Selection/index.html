@@ -858,15 +858,15 @@
 </thead>
 <tbody>
 <tr>
-<td>Meets voltage and current needs</td>
+<td>Meets voltage and current needs.</td>
 <td>Some reviewers claim it cannot handle 3A load as advertised.</td>
 </tr>
 <tr>
-<td>Includes female connector so barrel jack is not necessary</td>
+<td>Includes female connector so barrel jack is not necessary.</td>
 <td>No datasheet provided</td>
 </tr>
 <tr>
-<td>Shipped by amazon in a few days</td>
+<td>Shipps via amazon in a few days.</td>
 <td></td>
 </tr>
 </tbody>
@@ -888,15 +888,15 @@
 </thead>
 <tbody>
 <tr>
-<td>Interchangable input connector for use in other countries</td>
+<td>Interchangable input connector for use in other countries.</td>
 <td>14 week lead time</td>
 </tr>
 <tr>
-<td>Meets voltage and current needs</td>
+<td>Meets voltage and current needs.</td>
 <td></td>
 </tr>
 <tr>
-<td>Includes datasheet</td>
+<td>Includes datasheet.</td>
 <td></td>
 </tr>
 </tbody>
@@ -914,16 +914,145 @@
 
 | Pros                                                          | Cons                                                                                           |
 | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Very small package                                            | Significantly more cost effective to buy in bulk                        |
-| Senses current up to 31A                                      | How to analyze and filter signal is not as well understood. |
-| Operates on 5V                                                |
-| Through hole compatible pins pins                             |
+| Very small package.                                            | Significantly more cost effective to buy in bulk                        |
+| Senses current up to 31A.                                      | How to analyze and filter signal is not as well understood. |
+| Operates on 5V.                                                | Surface mount differs from rest of components
+| Provides electrical isolation between measuring device and device being measured.                                  |
 </code></pre>
 <ol>
-<li></li>
+<li>
+<p>ALLEGRO CURRENT SENSOR HE/OL 10A 8-SOIC (ACS724LLCTR-10AB-T)
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../current_sensor2.png" data-desc-position="bottom"><img alt="" src="../current_sensor2.png"></a></p>
+<ul>
+<li>$3.31/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/allegro-microsystems/ACS711KEXLT-31AB-T/3868195?s=N4IgTCBcDaIIIGEDKB2AjGg0gUQBoBkAVAWgGY04AhYwkAXQF8g">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Much lower sensitivity.</td>
+<td>More expensive</td>
+</tr>
+<tr>
+<td>Operates on 5V.</td>
+<td>How to analyze and filter signal is not as well understood.</td>
+</tr>
+<tr>
+<td>Provides electrical isolation between measuring device and device being measured.</td>
+<td></td>
+</tr>
+<tr>
+<td>Higher accuracy</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>DIY current sensor by Utsav_25
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../current_sensor3.png" data-desc-position="bottom"><img alt="" src="../current_sensor3.png"></a></p>
+<ul>
+<li><a href="https://www.instructables.com/DIY-Current-Sensor-20/">link</a></li>
+</ul>
+<p>Schematic:<br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../current_sensor3_schema.png" data-desc-position="bottom"><img alt="" src="../current_sensor3_schema.png"></a>
+| Pros                                               | Cons                                                                                           |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| No hall sensor required.                            | Unknown sensitivity or precision |
+| Non-inverting op-amp fulfills class requirements.  | Must build yourself |<br>
+| Circuit can easily be integrated into subsystem PCB. | Shunt resistor type current sensing generates heat and there is a slight loss of voltage. |
+|                                                    | Provides <strong>no</strong> electrical isolation between measuring device and device being measured. |</p>
+</li>
 </ol>
-<p><strong>Segment display</strong></p>
-<p><strong>Pushbutton</strong></p>
+<p><strong>Choice:</strong> DIY current sensor</p>
+<p><strong>Rationale:</strong> Circuit can be built with readily available parts besides the shunt resistor, mounted to the same PCB that the rest of the subsystem is connected to. Creating the circuit also allows the use of an op-amp to fulfill the project requirement for filtering signals. Lastly, making it provides an opportunity to learn how shunt type current sesnors function.</p>
+<p><strong>Display</strong>
+1. DFRobot 32 Digit 16x2 Transmissive LCD (DFR0555)
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../display1.jpg" data-desc-position="bottom"><img alt="" src="../display1.jpg"></a></p>
+<pre><code>* $9.90/each
+* [link to product](https://www.digikey.com/en/products/detail/dfrobot/DFR0555/9356340)
+
+| Pros                                                                                      | Cons                                                                                           |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| More descriptive than segment display.                                                     | Daughter board does not fit within scope of project. |
+| I2C interface allows serial communication using minimal pins.                              | More expensive without significant added functionality for user requirements. |
+</code></pre>
+<ol>
+<li>
+<p>uxcell 3 bit 7 segment display (LD5631BG?)
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../display2.png" data-desc-position="bottom"><img alt="" src="../display2.png"></a></p>
+<ul>
+<li>$1.70/each</li>
+<li><a href="https://a.co/d/5Iz0CXA">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Descriptive enough for project.</td>
+<td>Significantly more pins required than I2C LCD interface.</td>
+</tr>
+<tr>
+<td>Less current draw than LCD.</td>
+<td>Not clear whether it is exactly the same as LD5631BG which has a datasheet.</td>
+</tr>
+<tr>
+<td>Simpler than LCD.</td>
+<td></td>
+</tr>
+<tr>
+<td>Through-hole mount interfaces well with our PCB design.</td>
+<td></td>
+</tr>
+<tr>
+<td>Ships from Amazon in a reasonable amount of time.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Dual Digit Alphanumeric 16 segment LED display (OPS-AD4021LR-GW)
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../display3.png" data-desc-position="bottom"><img alt="" src="../display3.png"></a></p>
+<ul>
+<li>$4.24/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/opto-plus-led-corp/OPS-AD4021LR-GW/25956612">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>More descriptive capability than 7 segment display</td>
+<td>Significantly more pins required.</td>
+</tr>
+<tr>
+<td>Less current draw than LCD</td>
+<td>More expensive than 7 segment version</td>
+</tr>
+<tr>
+<td>Simpler than LCD</td>
+<td>Must buy in bulk far exceeding project budget.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
 
 
 
