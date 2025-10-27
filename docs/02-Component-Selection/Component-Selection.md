@@ -4,7 +4,7 @@ title: Component Selection
 
 ## Main Components
 
-**Current sensor**
+**Current sensor**<br>
 1. ALLEGRO CURRENT SENSOR HE/OL 31A 12-QFN (ACS711KEXLT-31AB-T)
 
     ![](current_sensor1.png)
