@@ -4,7 +4,8 @@ title: Component Selection
 
 ## Main Components
 
-**Current sensor**<br>
+**Current sensor**
+
 1. ALLEGRO CURRENT SENSOR HE/OL 31A 12-QFN (ACS711KEXLT-31AB-T)
     ![](current_sensor1.png)
 
@@ -84,3 +85,8 @@ title: Component Selection
     | More descriptive capability than 7 segment display                                        | Significantly more pins required.
     | Less current draw than LCD                                                                | More expensive than 7 segment version |
     | Simpler than LCD                                                                          | Must buy in bulk far exceeding project budget.
+    ||Surface mount
+
+**Choice:** uxcell 3 bit 7 segment display
+
+**Rationale:** This product fulfills the need to display power/energy use without too much complexity, is one of the cheapest options, and can be delivered quickly.
