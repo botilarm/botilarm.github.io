@@ -50,7 +50,8 @@ title: Component Selection
 
 **Rationale:** Circuit can be built with readily available parts besides the shunt resistor, mounted to the same PCB that the rest of the subsystem is connected to. Creating the circuit also allows the use of an op-amp to fulfill the project requirement for filtering signals. Lastly, making it provides an opportunity to learn how shunt type current sesnors function.
 
-**Display**<br>
+**Display**
+
 1. DFRobot 32 Digit 16x2 Transmissive LCD (DFR0555)
     ![](display1.jpg)
     
