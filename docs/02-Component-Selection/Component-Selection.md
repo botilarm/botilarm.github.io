@@ -4,9 +4,8 @@ title: Component Selection
 
 ## Components
 
-**9V 3A AC/DC Adapter**
+**9V 3A AC/DC Adapter** <br>
 1. WR9HD1333CCP-F(R6B) AC/DC WALL MOUNT ADAPTER 9V 12W
-
     ![](ac_adapter1.jpg)
 
     * $6.23/each
