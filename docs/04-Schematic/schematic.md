@@ -12,4 +12,4 @@ Notes:
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](current_sensor.pdf), and the Zip folder of the project [*here*](current_sensorp.zip).
+The schematic as a PDF download is available [*here*](current_sensor.pdf), and the Zip folder of the project [*here*](power_monitor_schematic.zip).
