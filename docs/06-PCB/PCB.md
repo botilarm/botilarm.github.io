@@ -10,4 +10,4 @@ Notes:
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](power_monitor_PCB.pdf), and the Zip folder of the project [*here*](current_sensor.zip), and gerber files for manufacturing [*here*](ArmandoBotiller203).
+The schematic as a PDF download is available [*here*](power_monitor_PCB.pdf), and the Zip folder of the project [*here*](sparkguard_power_monitor.zip), and gerber files for manufacturing [*here*](gerber.zip).

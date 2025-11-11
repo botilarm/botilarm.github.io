@@ -12,4 +12,4 @@ Notes:
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](current_sensor.pdf), and the Zip folder of the project [*here*](power_monitor_schematic.zip).
+The schematic as a PDF download is available [*here*](power_monitor_schematic.pdf), and the Zip folder of the project [*here*](sparkguard_power_monitor.zip).
