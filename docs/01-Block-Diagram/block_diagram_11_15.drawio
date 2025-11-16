@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0" version="28.2.9">
   <diagram name="Page-1" id="l2K_AgGr6unPT6OLj-3c">
-    <mxGraphModel dx="2804" dy="69" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1144" dy="-884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -99,14 +99,6 @@
         <mxCell id="C4jwDBn4P4yR650xpL3n-1" value="RD0" style="whiteSpace=wrap;html=1;fillColor=none;aspect=fixed;" parent="Lk5NFbXrYZskx6ylG3b8-72" vertex="1">
           <mxGeometry x="170" y="30" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="dWWJkGnQnN7-rNfCL3Ze-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=0;" edge="1" parent="1" source="Lk5NFbXrYZskx6ylG3b8-74" target="Lk5NFbXrYZskx6ylG3b8-39">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dWWJkGnQnN7-rNfCL3Ze-6" value="&lt;div&gt;digital/parallel&lt;/div&gt;&lt;div&gt;(5V, 12 pins)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dWWJkGnQnN7-rNfCL3Ze-5">
-          <mxGeometry x="-0.5597" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="Lk5NFbXrYZskx6ylG3b8-74" value="&lt;div&gt;&lt;font&gt;&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;4 bit 7 segment display\n(#CL3641AH)&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;p&amp;quot;,&amp;quot;v&amp;quot;:1.2},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;right&amp;quot;},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;s&amp;quot;,&amp;quot;v&amp;quot;:26,&amp;quot;e&amp;quot;:35},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:35},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:35},{&amp;quot;s&amp;quot;:24,&amp;quot;n&amp;quot;:&amp;quot;hl&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;#fcce14ff&amp;quot;,&amp;quot;e&amp;quot;:35},{&amp;quot;s&amp;quot;:24,&amp;quot;n&amp;quot;:&amp;quot;p&amp;quot;,&amp;quot;v&amp;quot;:1.2},{&amp;quot;s&amp;quot;:24,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;right&amp;quot;}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;4 bit 7 segment display&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;div align=&quot;center&quot;&gt;&lt;font&gt;&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;4 bit 7 segment display\n(#CL3641AH)&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;p&amp;quot;,&amp;quot;v&amp;quot;:1.2},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;right&amp;quot;},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;s&amp;quot;,&amp;quot;v&amp;quot;:26,&amp;quot;e&amp;quot;:35},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:35},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:35},{&amp;quot;s&amp;quot;:24,&amp;quot;n&amp;quot;:&amp;quot;hl&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;#fcce14ff&amp;quot;,&amp;quot;e&amp;quot;:35},{&amp;quot;s&amp;quot;:24,&amp;quot;n&amp;quot;:&amp;quot;p&amp;quot;,&amp;quot;v&amp;quot;:1.2},{&amp;quot;s&amp;quot;:24,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;right&amp;quot;}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;(&lt;span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;span&gt;#CL3641AH&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-552.5" y="1630" width="160" height="40" as="geometry" />
         </mxCell>
@@ -145,16 +137,24 @@
         <mxCell id="o9x6GnVgXAWBE_mBDDQN-1" value="&lt;div&gt;Op Amp&lt;/div&gt;&lt;div&gt;(Microhchip MCP6004)&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-757.5" y="1338.5" width="130" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="dWWJkGnQnN7-rNfCL3Ze-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="dWWJkGnQnN7-rNfCL3Ze-1" target="pVQ4feOjBxIumB5oli_U-1">
+        <mxCell id="dWWJkGnQnN7-rNfCL3Ze-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="dWWJkGnQnN7-rNfCL3Ze-1" target="pVQ4feOjBxIumB5oli_U-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dWWJkGnQnN7-rNfCL3Ze-4" value="&lt;div&gt;analog&lt;/div&gt;&lt;div&gt;(5 V, 1 pin)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dWWJkGnQnN7-rNfCL3Ze-2">
+        <mxCell id="dWWJkGnQnN7-rNfCL3Ze-4" value="&lt;div&gt;analog&lt;/div&gt;&lt;div&gt;(5 V, 1 pin)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="dWWJkGnQnN7-rNfCL3Ze-2" vertex="1" connectable="0">
           <mxGeometry x="0.0426" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dWWJkGnQnN7-rNfCL3Ze-1" value="&lt;div&gt;5 V 3 A USB power output&lt;/div&gt;&lt;div&gt;(GCT&amp;nbsp;USB1130-15-A)&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="dWWJkGnQnN7-rNfCL3Ze-1" value="&lt;div&gt;5 V 3 A USB power output&lt;/div&gt;&lt;div&gt;(GCT&amp;nbsp;USB1130-15-A)&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-757.5" y="1595" width="130" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="IpASEaH0wxrb2Rt8fknf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=0;" edge="1" parent="1" source="Lk5NFbXrYZskx6ylG3b8-39" target="Lk5NFbXrYZskx6ylG3b8-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IpASEaH0wxrb2Rt8fknf-2" value="&lt;div&gt;digital/parallel&lt;/div&gt;&lt;div&gt;(5V, 11 pins)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IpASEaH0wxrb2Rt8fknf-1">
+          <mxGeometry x="0.5851" relative="1" as="geometry">
+            <mxPoint x="8" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
