@@ -1,3 +1,0 @@
-By the rings...
-=============
-![chief1](chief.jpg){style width:"400" height:"300;"}
