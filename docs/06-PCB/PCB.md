@@ -1,5 +1,5 @@
 ---
-title: Schematic
+title: PCB
 ---
 ## Overview
 ![schematic](pcb_screenshot.png){style width:"350" height:"300;"}
