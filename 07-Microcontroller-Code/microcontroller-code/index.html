@@ -826,6 +826,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mainc" class="md-nav__link">
+    <span class="md-ellipsis">
+      main.c
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-download" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Download
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -931,6 +949,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mainc" class="md-nav__link">
+    <span class="md-ellipsis">
+      main.c
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-download" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Download
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -957,7 +993,56 @@
   <h1>Microcontroller Code</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This code was used to verify subsystem functionality by converting an analog signal from an amplifier to a DC voltage, and displaying it, as well as sending a digital signal to verify that current is being sensed to the solenoid board. It features code for switching the display from energy usage to instantaneous power but does not yet feature code to convert from the analog to digital signal to show either of those two values.</p>
+<p>This code was used to verify subsystem functionality by converting an analog signal from an amplifier to a DC voltage, and displaying it, as well as sending a digital signal to verify that current is being sensed to the solenoid door latch board. It features code for switching the display from energy usage to instantaneous power but does not yet feature code to convert from the analog to digital signal to show either of those two values.</p>
+<h2 id="mainc">main.c</h2>
+<div class="highlight"><pre><span></span><code>#include "mcc_generated_files/system/system.h"
+#include &lt;stdio.h&gt;
+#include &lt;stdbool.h&gt;
+
+/*
+    Main application
+*/
+
+int main(void)
+{
+    SYSTEM_Initialize();
+    ADC_Initialize();
+    bool isEnergyMode = false;
+    int analog_in;
+
+    while(1)
+    {
+        //switch from instantanous power display to energy usage over time
+        if(IO_PB_GetValue() == 1)
+        {
+            isEnergyMode = !isEnergyMode;
+            LED1_SetHigh();
+            //LED2_SetHigh();
+            LED3_SetHigh();
+            LED4_SetHigh();
+            //waits until button is released
+            while(IO_PB_GetValue() == 1);
+        } else {
+            LED1_SetLow();
+            //LED2_SetLow();
+            LED3_SetLow();
+            LED4_SetLow();
+        }
+
+        //read analog current sensor value and check if current is being drawn
+        ADC_ChannelSelect(ADC_CHANNEL_ANA0);
+        ADC_ConversionStart();
+        while (!ADC_IsConversionDone());
+        analog_in = ADC_ConversionResultGet();
+        printf("%d \r\n",analog_in);
+
+        //send cur_debug signal to verify that device is plugged in
+        if(analog_in &gt; 700) CUR_D_SetHigh();
+        else CUR_D_SetLow();
+    }    
+}
+</code></pre></div>
+<h2 id="project-download">Project Download</h2>
 <p>The code as an mplabx project download is available <a href="../sg_power_monitor.zip"><em>here</em></a>.</p>
 
 

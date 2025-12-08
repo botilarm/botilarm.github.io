@@ -552,6 +552,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -580,6 +582,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -588,9 +592,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#main-components" class="md-nav__link">
+  <a href="#voltage-regulator" class="md-nav__link">
     <span class="md-ellipsis">
-      Main Components
+      Voltage Regulator
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current sensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amplifiercurrent-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amplifier/Current monitor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table-of-final-selected-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary table of final selected components
     </span>
   </a>
   
@@ -915,6 +955,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -923,9 +965,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#main-components" class="md-nav__link">
+  <a href="#voltage-regulator" class="md-nav__link">
     <span class="md-ellipsis">
-      Main Components
+      Voltage Regulator
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current sensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amplifiercurrent-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amplifier/Current monitor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table-of-final-selected-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary table of final selected components
     </span>
   </a>
   
@@ -954,14 +1032,125 @@
   
 
 
-  <h1>Component Selection</h1>
-
-<h2 id="main-components">Main Components</h2>
-<p><strong>Current sensor</strong></p>
+<h1 id="main-components">Main Components</h1>
+<h2 id="voltage-regulator">Voltage Regulator</h2>
 <ol>
 <li>
-<p>ALLEGRO CURRENT SENSOR HE/OL 31A 12-QFN (ACS711KEXLT-31AB-T)
-    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../current_sensor1.png" data-desc-position="bottom"><img alt="" src="../current_sensor1.png"></a></p>
+<p>LM7805CT/NOPB Fixed 5V Linear Regulator</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../reg1.png" data-desc-position="bottom"><img alt="" src="../reg1.png"></a></p>
+<ul>
+<li>$1.80/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM7805CT-NOPB/3901929">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Built-in over current and thermal shutdown protection.</td>
+<td>Low efficiency because wastes excess input power as heat, also requiring heat large sink for high power.</td>
+</tr>
+<tr>
+<td>Fixed 5V low noise output, which is ideal for standard digital logic</td>
+<td>High dropout voltage requires input voltage to be at least 2V higher than 5V output.</td>
+</tr>
+<tr>
+<td>Very low cost and universally available</td>
+<td>Through hole package not suitable for miniaturization</td>
+</tr>
+<tr>
+<td>Through hole consistent with rest of project.</td>
+<td>Not rated for 3A current required for project.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>LM2576T-5.0/NOPB Buck Switching Regulator IC Positive Fixed 5V Output                                                                 </p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../reg2.png" data-desc-position="bottom"><img alt="" src="../reg2.png"></a></p>
+<ul>
+<li>$3.54/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2576T-5-0-NOPB/212636">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High efficiency and low heat not requiring large heat sinks</td>
+<td>Requires 4 essential external components increasing circuit complexity and cost.</td>
+</tr>
+<tr>
+<td>Wide 4-40V input range, input voltage only needs to be slightly higher unlike high dropout linear regulator.</td>
+<td>Generally unsuitable for powering noise-sensitive circuits without filtering due to electromagnetic interference and output ripple</td>
+</tr>
+<tr>
+<td>High 3A output current suitable for project</td>
+<td>Large inductor required compared to higher frequency switchers.</td>
+</tr>
+<tr>
+<td>Through hole consistent with rest of project.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>LM1085IT-5.0 Fixed 5V Linear Regulator</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../reg1.png" data-desc-position="bottom"><img alt="" src="../reg1.png"></a></p>
+<ul>
+<li>$3.34/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM1085IT-5-0/3694822">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Built-in over current and thermal shutdown protection.</td>
+<td>Massively inefficient at full load, requiring bulky heatsink.</td>
+</tr>
+<tr>
+<td>Fixed 5V low noise output, which is ideal for standard digital logic</td>
+<td>Obsolete product; not recommended for new designs</td>
+</tr>
+<tr>
+<td>3A output fulfills project power budget requirements</td>
+<td>High quiescient current of 10 mA means there is constant 10mA current draw when nothing else is being powered.</td>
+</tr>
+<tr>
+<td>Lower 1.5V dropout voltage than LM7805.</td>
+<td>Through hole package not suitable for miniaturization</td>
+</tr>
+<tr>
+<td>Through hole consistent with rest of project.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<blockquote>
+<p><strong>Choice:</strong> LM1085IT-5.0 Fixed 5V Linear Regulator<br>
+<strong>Rationale:</strong> This regulator fulfills the class requirements of having a linear regulator as well as power budget requirements.</p>
+</blockquote>
+<h2 id="current-sensor">Current sensor</h2>
+<ol>
+<li>
+<p>ALLEGRO CURRENT SENSOR HE/OL 31A 12-QFN (ACS711KEXLT-31AB-T)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../current_sensor1.png" data-desc-position="bottom"><img alt="" src="../current_sensor1.png"></a></p>
 <ul>
 <li>$1.02/each</li>
 <li><a href="https://www.digikey.com/en/products/detail/allegro-microsystems/ACS711KEXLT-31AB-T/3868195?s=N4IgTCBcDaIIIGEDKB2AjGg0gUQBoBkAVAWgGY04AhYwkAXQF8g">link to product</a></li>
@@ -994,8 +1183,8 @@
 </table>
 </li>
 <li>
-<p>ALLEGRO CURRENT SENSOR HE/OL 10A 8-SOIC (ACS724LLCTR-10AB-T)
-    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../current_sensor2.png" data-desc-position="bottom"><img alt="" src="../current_sensor2.png"></a></p>
+<p>ALLEGRO CURRENT SENSOR HE/OL 10A 8-SOIC (ACS724LLCTR-10AB-T)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../current_sensor2.png" data-desc-position="bottom"><img alt="" src="../current_sensor2.png"></a></p>
 <ul>
 <li>$3.31/each</li>
 <li><a href="https://www.digikey.com/en/products/detail/allegro-microsystems/ACS711KEXLT-31AB-T/3868195?s=N4IgTCBcDaIIIGEDKB2AjGg0gUQBoBkAVAWgGY04AhYwkAXQF8g">link to product</a></li>
@@ -1028,8 +1217,8 @@
 </table>
 </li>
 <li>
-<p>DIY current sensor by Utsav_25
-    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../current_sensor3.png" data-desc-position="bottom"><img alt="" src="../current_sensor3.png"></a></p>
+<p>DIY current sensor by Utsav_25</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../current_sensor3.png" data-desc-position="bottom"><img alt="" src="../current_sensor3.png"></a></p>
 <ul>
 <li><a href="https://www.instructables.com/DIY-Current-Sensor-20/">link</a></li>
 </ul>
@@ -1042,10 +1231,152 @@
 | Circuit can easily be integrated into subsystem PCB. | Shunt resistor type current sensing generates heat and there is a slight loss of voltage. |
 |                                                    | Provides <strong>no</strong> electrical isolation between measuring device and device being measured. |</p>
 </li>
+<li>
+<p>Self made low side current sensor based on "An Engineer’s Guide to Current Sensing" by Scott Hill et al. on ti.com using MSR3-0R01F1 as a shunt resistor</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../current_sensor_ls_concept.png" data-desc-position="bottom"><img alt="" src="../current_sensor_ls_concept.png"></a>
+<em>img src: https://www.ti.com/technologies/current-sensing-solutions.html#tab-2</em></p>
+<ul>
+<li><a href="https://www.ti.com/lit/eb/slyy154b/slyy154b.pdf?ts=1763525864489&amp;ref_url=https%253A%252F%252Fduckduckgo.com%252F">link to guide</a></li>
+<li>Schematic: <a href="/04-Schematic/schematic/">link</a></li>
+</ul>
+<p>Shunt Resistor:
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../resistor.png" data-desc-position="bottom"><img alt="" src="../resistor.png"></a>
+* $1.78/each
+* <a href="https://www.digikey.com/en/products/detail/riedon-products-by-bourns/MSR3-0R01F1/1641076">link</a></p>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low side current sensing requires less power on the shunt resistor</td>
+<td>Must build yourself</td>
+</tr>
+<tr>
+<td>Non-inverting op-amp fulfills class requirements.</td>
+<td>Shunt resistor type current sensing generates heat and there is a slight loss of voltage.</td>
+</tr>
+<tr>
+<td>Circuit can easily be integrated into subsystem PCB.</td>
+<td>Provides <strong>no</strong> electrical isolation between measuring device and device being measured.</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ol>
-<p><strong>Choice:</strong> DIY current sensor</p>
-<p><strong>Rationale:</strong> Circuit can be built with readily available parts besides the shunt resistor, mounted to the same PCB that the rest of the subsystem is connected to. Creating the circuit also allows the use of an op-amp to fulfill the project requirement for filtering signals. Lastly, making it provides an opportunity to learn how shunt type current sesnors function.</p>
-<p><strong>Display</strong></p>
+<blockquote>
+<p><strong>Choice:</strong> Self made current sensor based on Texas Instruments guide using MSR3-0R01F1 0.01 ohm 5W resistor.<br>
+<strong>Rationale:</strong> Circuit can be built with readily available parts besides the shunt resistor, mounted to the same PCB that the rest of the subsystem is connected to. Creating the circuit also allows the use of an op-amp to fulfill the project requirement for filtering signals. Lastly, making it provides an opportunity to learn how shunt type current sensors function.</p>
+</blockquote>
+<h2 id="amplifiercurrent-monitor">Amplifier/Current monitor</h2>
+<ol>
+<li>
+<p>Texas Instruments Current Monitor (INA226AIDGSR)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../amplifier1.png" data-desc-position="bottom"><img alt="" src="../amplifier1.png"></a></p>
+<ul>
+<li>$2.58/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/INA226AIDGSR/2687118">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Performs full measurement of current, bus voltage, and calculated power using built-in analog to digital converter(ADC).</td>
+<td>Must calibrate firmware with a calibration register derived from specific external shunt resistor to achieve accurate output.</td>
+</tr>
+<tr>
+<td>High accuracy with gain error of only 0.1% and bi-directional sensing</td>
+<td>System accuracy is highly dependent on the quality of external shunt resistor.</td>
+</tr>
+<tr>
+<td>Wide independent common-mode range; can measure current across 0-36V buses despite 2.7-5.5V supply voltage.</td>
+<td>Bandwidth and conversion time are slow with integrated ADC; not suitable for high-speed applications where &lt;8 ms conversion rate is required.</td>
+</tr>
+<tr>
+<td></td>
+<td>Surface mount not consistent with rest of project.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Broadcom Limited Current sense amplifier (HCPL-7520-000E)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../amplifier2.png" data-desc-position="bottom"><img alt="" src="../amplifier2.png"></a></p>
+<ul>
+<li>$5.26/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/broadcom-limited/HCPL-7520-000E/825320">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High galvanic isolation barrier allowing measurement current to float and protect low-voltage control circuitry.</td>
+<td>Input side requires its own isolated power supply to establish isolation barrier.</td>
+</tr>
+<tr>
+<td>Highly immune to noise with &gt;10 kV/microsecond common-mode rejection crucial for switching environments.</td>
+<td>External shunt resistor required.</td>
+</tr>
+<tr>
+<td>Highly accurate analog output.</td>
+<td>Output is analog unlike INA226 which is a digital monitor because it includes an ADC.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>MCP6004-I/P Operational Amplifier
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../amplifier3.png" data-desc-position="bottom"><img alt="" src="../amplifier3.png"></a></p>
+<ul>
+<li>$0.59/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rail-to-rail input/output meaning voltage can swing very close to power supply rails, maximizing available signal range.</td>
+<td>High input offset voltage (+-4.5 mV) making it unsuitable for precision sensing of very low currents without removing the offset.</td>
+</tr>
+<tr>
+<td>Low quiescent current (100 micramps per amplifer) and quad-channel; cost and space efficient.</td>
+<td>Limited common-mode voltage range; cannot typically withstand voltages higher than its supply rail (6V) making it only suitable for low-side current sensing.</td>
+</tr>
+<tr>
+<td>Extremely low cost and versatility; can easily configure it for different roles, e.g. differential, inverting, and non-inverting.</td>
+<td>Only one out of four op-amps are being used in the design</td>
+</tr>
+<tr>
+<td>Through hole consistent with rest of project</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<blockquote>
+<p><strong>Choice</strong>: MCP6004-I/P Operational Amplifier
+<strong>Rationale:</strong> This amplifier is already available in class, meaning no additional purchases would be required besides the shunt resistor to have a functioning current sensor. And, while a dedicated current monitoring chip or current sensing amplifier would be better for accurate current sensing, using a general op-amp is a better learning opportunity.</p>
+</blockquote>
+<h2 id="display">Display</h2>
 <ol>
 <li>
 <p>DFRobot 32 Digit 16x2 Transmissive LCD (DFR0555)
@@ -1112,12 +1443,10 @@
 </table>
 </li>
 <li>
-<p>Dual Digit Alphanumeric 16 segment LED display (OPS-AD4021LR-GW)
-    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../display3.png" data-desc-position="bottom"><img alt="" src="../display3.png"></a></p>
-<ul>
-<li>$4.24/each</li>
-<li><a href="https://www.digikey.com/en/products/detail/opto-plus-led-corp/OPS-AD4021LR-GW/25956612">link to product</a></li>
-</ul>
+<p>Dual Digit Alphanumeric 16 segment LED display (OPS-AD4021LR-GW)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../display3.png" data-desc-position="bottom"><img alt="" src="../display3.png"></a>
+* $4.24/each
+* <a href="https://www.digikey.com/en/products/detail/opto-plus-led-corp/OPS-AD4021LR-GW/25956612">link to product</a></p>
 <table>
 <thead>
 <tr>
@@ -1145,9 +1474,77 @@
 </tbody>
 </table>
 </li>
+<li>
+<p>7 Segment 3 Digit 0.56" Green Display BA56-12GWA</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../display4.png" data-desc-position="bottom"><img alt="" src="../display4.png"></a>
+* $5.30/each
+* <a href="https://www.digikey.com/en/products/detail/kingbright/BA56-12GWA/3084327?s=N4IgTCBcDaIEIEECsA2AtARjAcQOoJAF0BfIA">link to product</a></p>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Descriptive enough for project.</td>
+<td>Significantly more pins required than I2C LCD interface.</td>
+</tr>
+<tr>
+<td>Less current draw than LCD.</td>
+<td></td>
+</tr>
+<tr>
+<td>Simpler than other displays.</td>
+<td></td>
+</tr>
+<tr>
+<td>Has datasheet</td>
+<td></td>
+</tr>
+<tr>
+<td>Green color more readable than other colors.</td>
+<td></td>
+</tr>
+<tr>
+<td>Through hole matches with all other components in design.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
 </ol>
-<p><strong>Choice:</strong> uxcell 3 bit 7 segment display</p>
-<p><strong>Rationale:</strong> This product fulfills the need to display power/energy use without too much complexity, is one of the cheapest options, and can be delivered quickly.</p>
+<blockquote>
+<p><strong>Choice:</strong> 7 Segment 3 Digit 0.56" Green Display (BA56-12GWA)<br>
+<strong>Rationale:</strong> This product fulfills the need to display power/energy use without too much complexity, is through hole, includes a datasheet, and can be bought along with the other digikey components.</p>
+</blockquote>
+<h2 id="summary-table-of-final-selected-components">Summary table of final selected components</h2>
+<p>The selected components are the main components used to construct the power monitor board.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Model #</th>
+<th>Link to datasheet</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fixed 5V Linear Regulator</td>
+<td>LM1085IT-5.0</td>
+<td><a href="https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm1085">link</a></td>
+<td>Takes input voltage from power supply and converts it to 5V used to power all other components in the circuit.</td>
+</tr>
+<tr>
+<td>0.01 ohm 5W resistor</td>
+<td>MSR3-0R01F1</td>
+<td><a href="https://www.bourns.com/docs/Product-Datasheets/MSR.pdf">link</a></td>
+<td>Functions as a low-side shunt resistor to measure voltage across in order to get the current through load.</td>
+</tr>
+</tbody>
+</table>
 
 
 
