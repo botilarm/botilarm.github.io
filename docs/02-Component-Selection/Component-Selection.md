@@ -7,7 +7,7 @@ title: Component Selection
 ## Voltage Regulator
 1. LM7805CT/NOPB Fixed 5V Linear Regulator
     
-    ![](reg1.png){style width:"175" height:"150;"}
+    ![](reg1.png){style width:"100" height:"100;"}
 
     * $1.80/each
     * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM7805CT-NOPB/3901929)
@@ -21,7 +21,7 @@ title: Component Selection
 
 2. LM2576T-5.0/NOPB Buck Switching Regulator IC Positive Fixed 5V Output                                                                 
     
-    ![](reg2.png){style width:"175" height:"150;"}
+    ![](reg2.png){style width:"100" height:"100;"}
 
     * $3.54/each
     * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2576T-5-0-NOPB/212636)
@@ -35,7 +35,7 @@ title: Component Selection
 
 3. LM1085IT-5.0 Fixed 5V Linear Regulator
     
-    ![](reg1.png){style width:"350" height:"300;"}
+    ![](reg1.png){style width:"100" height:"100;"}
 
     * $3.34/each
     * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM1085IT-5-0/3694822)
@@ -55,7 +55,7 @@ title: Component Selection
 
 1. ALLEGRO CURRENT SENSOR HE/OL 31A 12-QFN (ACS711KEXLT-31AB-T)
     
-    ![](current_sensor1.png){style width:"350" height:"300;"}
+    ![](current_sensor1.png){style width:"100" height:"100;"}
 
     * $1.02/each
     * [link to product](https://www.digikey.com/en/products/detail/allegro-microsystems/ACS711KEXLT-31AB-T/3868195?s=N4IgTCBcDaIIIGEDKB2AjGg0gUQBoBkAVAWgGY04AhYwkAXQF8g)
@@ -69,7 +69,7 @@ title: Component Selection
 
 2. ALLEGRO CURRENT SENSOR HE/OL 10A 8-SOIC (ACS724LLCTR-10AB-T)
     
-    ![](current_sensor2.png){style width:"350" height:"300;"}
+    ![](current_sensor2.png){style width:"100" height:"100;"}
 
     * $3.31/each
     * [link to product](https://www.digikey.com/en/products/detail/allegro-microsystems/ACS711KEXLT-31AB-T/3868195?s=N4IgTCBcDaIIIGEDKB2AjGg0gUQBoBkAVAWgGY04AhYwkAXQF8g)
@@ -83,7 +83,7 @@ title: Component Selection
 
 3. DIY current sensor by Utsav_25
     
-    ![](current_sensor3.png){style width:"350" height:"300;"}
+    ![](current_sensor3.png){style width:"100" height:"100;"}
     
     * [link](https://www.instructables.com/DIY-Current-Sensor-20/)
 
@@ -106,7 +106,7 @@ title: Component Selection
 
     Shunt Resistor:
     
-    ![](resistor.png){style width:"350" height:"300;"}
+    ![](resistor.png){style width:"100" height:"100;"}
 
     * $1.78/each
     * [link](https://www.digikey.com/en/products/detail/riedon-products-by-bourns/MSR3-0R01F1/1641076)
@@ -123,7 +123,7 @@ title: Component Selection
 ## Amplifier/Current monitor
 1. Texas Instruments Current Monitor (INA226AIDGSR)
     
-    ![](amplifier1.png){style width:"350" height:"300;"}
+    ![](amplifier1.png){style width:"100" height:"100;"}
 
     * $2.58/each
     * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/INA226AIDGSR/2687118)
@@ -137,7 +137,7 @@ title: Component Selection
 
 2. Broadcom Limited Current sense amplifier (HCPL-7520-000E)
     
-    ![](amplifier2.png){style width:"350" height:"300;"}
+    ![](amplifier2.png){style width:"100" height:"100;"}
 
     * $5.26/each
     * [link to product](https://www.digikey.com/en/products/detail/broadcom-limited/HCPL-7520-000E/825320)
@@ -150,7 +150,7 @@ title: Component Selection
 
 3. MCP6004-I/P Operational Amplifier
     
-    ![](amplifier3.png){style width:"350" height:"300;"}
+    ![](amplifier3.png){style width:"100" height:"100;"}
 
     * $0.59/each
     * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060)
@@ -169,7 +169,7 @@ title: Component Selection
 
 1. DFRobot 32 Digit 16x2 Transmissive LCD (DFR0555)
     
-    ![](display1.jpg){style width:"350" height:"300;"}
+    ![](display1.jpg){style width:"100" height:"100;"}
     
     * $9.90/each
     * [link to product](https://www.digikey.com/en/products/detail/dfrobot/DFR0555/9356340)
@@ -181,7 +181,7 @@ title: Component Selection
 
 2. uxcell 3 bit 7 segment display (LD5631BG?)
     
-    ![](display2.png){style width:"350" height:"300;"}
+    ![](display2.png){style width:"100" height:"100;"}
 
     * $1.70/each
     * [link to product](https://a.co/d/5Iz0CXA)
@@ -196,7 +196,7 @@ title: Component Selection
 
 3. 	Dual Digit Alphanumeric 16 segment LED display (OPS-AD4021LR-GW)
     
-    ![](display3.png){style width:"350" height:"300;"}
+    ![](display3.png){style width:"100" height:"100;"}
 
     * $4.24/each
     * [link to product](https://www.digikey.com/en/products/detail/opto-plus-led-corp/OPS-AD4021LR-GW/25956612)
@@ -210,7 +210,7 @@ title: Component Selection
  
 4. 7 Segment 3 Digit 0.56" Green Display BA56-12GWA
     
-    ![](display4.png){style width:"350" height:"300;"}
+    ![](display4.png){style width:"100" height:"100;"}
 
     * $5.30/each
     * [link to product](https://www.digikey.com/en/products/detail/kingbright/BA56-12GWA/3084327?s=N4IgTCBcDaIEIEECsA2AtARjAcQOoJAF0BfIA)
@@ -243,7 +243,7 @@ MCC is the way all pins and modules are configured on the PIC curiosity nano boa
 1. **Application builder**<br>
     This shows all modules used.
 
-    ![mcc_config](MCC_config.png){style width:"350" height:"300;"}
+![](MCC_config.png){style width:"350" height:"300;"}
 
 2. **Pin grid** <br>
     This shows all the pins, grouped by Port and Module, and whether they are inputs or outputs.
