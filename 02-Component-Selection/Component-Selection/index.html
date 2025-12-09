@@ -1579,15 +1579,21 @@
 <td><a href="https://www.digikey.com/en/products/detail/kingbright/BA56-12GWA/3084327?s=N4IgTCBcDaIEIEECsA2AtARjAcQOoJAF0BfIA">link</a></td>
 <td>Displays power monitor output. First two digits are for the value in Watts or kWh, and the third digit distinguishes which one is showing.</td>
 </tr>
+<tr>
+<td>PIC Curiosity Nano Board</td>
+<td>PIC18F57Q43 Curiosity Nano</td>
+<td><a href="https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/PIC18F27-47-57Q43-Microcontroller-Data-Sheet-XLP-DS40002147.pdf">chip datasheet</a>, <a href="https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf">hardware guide</a></td>
+<td>Microcontroller converts analog signal from current sensor circuit to digital value to then convert to instantaneous power or kWh using internal clock; also communicates with other boards in sparkguard system.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="mcc-configuration">MCC Configuration</h2>
-<ol>
-<li>
-<p><strong>Application builder</strong><br>
+<p>MCC is the way all pins and modules are configured on the PIC curiosity nano board using Microchip's MPLABX IDE.
+1. <strong>Application builder</strong><br>
     This shows all modules used.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MCC_config.png" data-desc-position="bottom"><img alt="" src="../MCC_config.png"></a></p>
-</li>
+<pre><code>![](MCC_config.png)
+</code></pre>
+<ol>
 <li>
 <p><strong>Pin grid</strong> <br>
     This shows all the pins, grouped by Port and Module, and whether they are inputs or outputs.</p>
