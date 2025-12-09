@@ -1,10 +1,11 @@
-# Home
 ---
 title: Welcome
 tags:
 - tag1
 - tag2
 ---
+
+# Home
 <center>
 <font size= "6">Armando Botiller Datasheet</font><br>
 as part of<br>
@@ -12,7 +13,7 @@ as part of<br>
 for<br>
 <font size= "5"> Team 203 </font><br>
 
-**Submission: 11-15-2025**
+**Submission: 12-08-2025**
 </center>
 
 ## Introduction
@@ -28,4 +29,10 @@ for<br>
 ### Links
 1. [Block Diagram](https://botilarm.github.io/01-Block-Diagram/Block-Diagram/)
 2. [Component Selection](https://botilarm.github.io/02-Component-Selection/Component-Selection/)
-3. [Schematic](https://botilarm.github.io/04-Schematic/schematic/)
+3. [BOM](https://botilarm.github.io/03-BOM/BOM/)
+4. [Schematic](https://botilarm.github.io/04-Schematic/schematic/)
+5. [Power Budget](https://botilarm.github.io/05-Power-Budget/Power-Budget/)
+6. [PCB Design](https://botilarm.github.io/06-PCB-Design/PCB%20Design/)
+7. [Microcontroller Code](https://botilarm.github.io/07-Microcontroller-Code/microcontroller-code/)
+8. [Hardware Design v2.0](https://botilarm.github.io/08-Hardware-Design-V2.0/Hardware%20Design%20V2.0/)
+9. [Resources]()
