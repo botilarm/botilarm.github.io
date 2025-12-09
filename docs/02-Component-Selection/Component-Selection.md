@@ -105,7 +105,9 @@ title: Component Selection
     * Schematic: [link](/04-Schematic/schematic/)
 
     Shunt Resistor:
+    
     ![](resistor.png)
+
     * $1.78/each
     * [link](https://www.digikey.com/en/products/detail/riedon-products-by-bourns/MSR3-0R01F1/1641076)
     
@@ -147,6 +149,7 @@ title: Component Selection
     | Highly accurate analog output.                                                                                      | Output is analog unlike INA226 which is a digital monitor because it includes an ADC.                                                         |
 
 3. MCP6004-I/P Operational Amplifier
+    
     ![](amplifier3.png)
 
     * $0.59/each
@@ -165,6 +168,7 @@ title: Component Selection
 ## Display
 
 1. DFRobot 32 Digit 16x2 Transmissive LCD (DFR0555)
+    
     ![](display1.jpg)
     
     * $9.90/each
@@ -176,7 +180,9 @@ title: Component Selection
     | I2C interface allows serial communication using minimal pins.                              | More expensive without significant added functionality for user requirements. |  
 
 2. uxcell 3 bit 7 segment display (LD5631BG?)
+    
     ![](display2.png)
+
     * $1.70/each
     * [link to product](https://a.co/d/5Iz0CXA)
 
@@ -191,6 +197,7 @@ title: Component Selection
 3. 	Dual Digit Alphanumeric 16 segment LED display (OPS-AD4021LR-GW)
     
     ![](display3.png)
+
     * $4.24/each
     * [link to product](https://www.digikey.com/en/products/detail/opto-plus-led-corp/OPS-AD4021LR-GW/25956612)
 
@@ -204,6 +211,7 @@ title: Component Selection
 4. 7 Segment 3 Digit 0.56" Green Display BA56-12GWA
     
     ![](display4.png)
+
     * $5.30/each
     * [link to product](https://www.digikey.com/en/products/detail/kingbright/BA56-12GWA/3084327?s=N4IgTCBcDaIEIEECsA2AtARjAcQOoJAF0BfIA)
 
@@ -226,3 +234,24 @@ The selected components are the main components used to construct the power moni
 | --------- | ------- | ----------------- | -------- |
 | Fixed 5V Linear Regulator | LM1085IT-5.0 | [link](https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm1085) | Takes input voltage from power supply and converts it to 5V used to power all other components in the circuit. |
 | 0.01 ohm 5W resistor | MSR3-0R01F1 | [link](https://www.bourns.com/docs/Product-Datasheets/MSR.pdf) | Functions as a low-side shunt resistor to measure voltage across in order to get the current through load. |
+| Operational Amplifier | MCP6004-I/P | [link](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) | Amplifies small signal from shunt resistor to larger signal easily distinguishable to PIC microcontroller.| 
+| 7 Segment 3 Digit 0.56" Green Display | BA56-12GWA | [link](https://www.digikey.com/en/products/detail/kingbright/BA56-12GWA/3084327?s=N4IgTCBcDaIEIEECsA2AtARjAcQOoJAF0BfIA) | Displays power monitor output. First two digits are for the value in Watts or kWh, and the third digit distinguishes which one is showing. |
+
+## MCC Configuration
+1. **Application builder**<br>
+    This shows all modules used.
+
+    ![](MCC_config.png)
+
+2. **Pin grid** <br>
+    This shows all the pins, grouped by Port and Module, and whether they are inputs or outputs.
+
+    ![](MCC_pingrid.png)
+
+    * Uart1 TX and RX pins are used to necessary for debugging and final subsystem verification.
+    * See [block diagram](/site/01-Block-Diagram/Block-Diagram/index.html) and [schematic](/site/04-Schematic/schematic/index.html) for more context to pin names.
+
+3. **Pin table** <br>
+    This shows all the pins' names, modules associated, direction, whether they are analog or digital, and custom name used in code.
+
+    ![](MCC_pins.png)
