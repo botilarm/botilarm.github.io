@@ -243,7 +243,7 @@ MCC is the way all pins and modules are configured on the PIC curiosity nano boa
 1. **Application builder**<br>
     This shows all modules used.
 
-    ![](MCC_config.png)
+    ![mcc_config](MCC_config.png)
 
 2. **Pin grid** <br>
     This shows all the pins, grouped by Port and Module, and whether they are inputs or outputs.
@@ -251,7 +251,7 @@ MCC is the way all pins and modules are configured on the PIC curiosity nano boa
     ![](MCC_pingrid.png)
 
     * Uart1 TX and RX pins are used to necessary for debugging and final subsystem verification.
-    * See [block diagram](/site/01-Block-Diagram/Block-Diagram/index.html) and [schematic](/site/04-Schematic/schematic/index.html) for more context to pin names.
+    * See [block diagram](04-Schematic/schematic/) and [schematic](/site/04-Schematic/schematic/index.html) for more context to pin names.
 
 3. **Pin table** <br>
     This shows all the pins' names, modules associated, direction, whether they are analog or digital, and custom name used in code.
