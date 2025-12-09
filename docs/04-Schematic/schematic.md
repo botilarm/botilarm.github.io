@@ -12,4 +12,4 @@ Notes:
 
 ## Resources
 
-The schematic as a PDF download is available [*here*](power_monitor_schematic.pdf), and the Zip folder of the project [*here*](sparkguard_power_monitor.zip).
+The schematic as a PDF download is available [*here*](sparkguard_power_monitor.pdf), and the Zip folder of the project [*here*](sparkguard_power_monitor.zip).
