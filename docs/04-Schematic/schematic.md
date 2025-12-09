@@ -7,9 +7,9 @@ This Schematic describes the current sensing and power monitoring display portio
 Power monitor and display design
 
 Notes:
-* The current sensor circuit on the bottom left is a shunt resistor type current sensor based on the DIY current sensor discussed in [Component Selection](https://botilarm.github.io/02-Component-Selection/Component-Selection/), using an MCP6004 op amp chip.
-* The voltage regulator powers the entire circuit as well as the device being monitored. The device is connected by a USB port represented by J8.
+* The current sensor circuit on the bottom left is a shunt resistor type current sensor based on low-side current sensing circuits discussed in [Component Selection](https://botilarm.github.io/02-Component-Selection/Component-Selection/), using an MCP6004 op amp chip.
+* The voltage regulator powers the entire circuit as well as the device being monitored. The device is connected by a USB port represented by J2.
 
-## Resouces
+## Resources
 
 The schematic as a PDF download is available [*here*](power_monitor_schematic.pdf), and the Zip folder of the project [*here*](sparkguard_power_monitor.zip).

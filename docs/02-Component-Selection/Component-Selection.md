@@ -7,7 +7,7 @@ title: Component Selection
 ## Voltage Regulator
 1. LM7805CT/NOPB Fixed 5V Linear Regulator
     
-    ![](reg1.png){style width:"350" height:"300;"}
+    ![](reg1.png){style width:"175" height:"150;"}
 
     * $1.80/each
     * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM7805CT-NOPB/3901929)
@@ -21,7 +21,7 @@ title: Component Selection
 
 2. LM2576T-5.0/NOPB Buck Switching Regulator IC Positive Fixed 5V Output                                                                 
     
-    ![](reg2.png){style width:"350" height:"300;"}
+    ![](reg2.png){style width:"175" height:"150;"}
 
     * $3.54/each
     * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2576T-5-0-NOPB/212636)
