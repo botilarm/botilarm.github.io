@@ -239,7 +239,7 @@ The selected components are the main components used to construct the power moni
 | PIC Curiosity Nano Board | PIC18F57Q43 Curiosity Nano | [chip datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/PIC18F27-47-57Q43-Microcontroller-Data-Sheet-XLP-DS40002147.pdf), [hardware guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf) | Microcontroller converts analog signal from current sensor circuit to digital value to then convert to instantaneous power or kWh using internal clock; also communicates with other boards in sparkguard system. |
 
 ## MCC Configuration
-MCC is the way all pins and modules are configured on the PIC curiosity nano board using Microchip's MPLABX IDE.
+MCC is the way all pins and modules are configured on the PIC curiosity nano board using Microchip's MPLABX IDE.<br>
 1. **Application builder**<br>
     This shows all modules used.
 
