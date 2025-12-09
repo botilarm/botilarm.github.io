@@ -9,6 +9,11 @@ The power monitor power budget only has one +5V power rail from a fixed linear r
 
 ![budget](power_budget_screenshot.png)
 
+## Use of Power Budget
+The power budget was used to estimate the maximum current need of the circuit, which determined which voltage regulator to select because that regulator will provide power to the 5V power rail as shown above, which comprises all other main electrical components. 
+
+This info was also used to determine fuse current values.
+
 ## Resources
 
 The power budget as a PDF download is available [*here*](power_budget.pdf), and a Microsoft Excel Sheet [*here*](power_budget.xlsx).

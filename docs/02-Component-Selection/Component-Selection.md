@@ -236,8 +236,10 @@ The selected components are the main components used to construct the power moni
 | 0.01 ohm 5W resistor | MSR3-0R01F1 | [link](https://www.bourns.com/docs/Product-Datasheets/MSR.pdf) | Functions as a low-side shunt resistor to measure voltage across in order to get the current through load. |
 | Operational Amplifier | MCP6004-I/P | [link](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) | Amplifies small signal from shunt resistor to larger signal easily distinguishable to PIC microcontroller.| 
 | 7 Segment 3 Digit 0.56" Green Display | BA56-12GWA | [link](https://www.digikey.com/en/products/detail/kingbright/BA56-12GWA/3084327?s=N4IgTCBcDaIEIEECsA2AtARjAcQOoJAF0BfIA) | Displays power monitor output. First two digits are for the value in Watts or kWh, and the third digit distinguishes which one is showing. |
+| PIC Curiosity Nano Board | PIC18F57Q43 Curiosity Nano | [chip datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/PIC18F27-47-57Q43-Microcontroller-Data-Sheet-XLP-DS40002147.pdf), [hardware guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf) | Microcontroller converts analog signal from current sensor circuit to digital value to then convert to instantaneous power or kWh using internal clock; also communicates with other boards in sparkguard system. |
 
 ## MCC Configuration
+MCC is the way all pins and modules are configured on the PIC curiosity nano board using Microchip's MPLABX IDE.
 1. **Application builder**<br>
     This shows all modules used.
 
