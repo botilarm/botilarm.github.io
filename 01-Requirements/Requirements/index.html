@@ -26,7 +26,7 @@
 
     
       
-        <title>Module's Requirements - EGR 314 Armando Botiller Datasheet</title>
+        <title>Arm Module's Requirements - EGR 314 Armando Botiller Datasheet</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#module-requirements" class="md-skip">
+        <a href="#arm-module-requirements" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Module's Requirements
+              Arm Module's Requirements
             
           </span>
         </div>
@@ -471,7 +471,7 @@
           
   
   <span class="md-ellipsis">
-    Module's Requirements
+    Arm Module's Requirements
   </span>
   
 
@@ -482,7 +482,7 @@
         
   
   <span class="md-ellipsis">
-    Module's Requirements
+    Arm Module's Requirements
   </span>
   
 
@@ -502,9 +502,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-requirements" class="md-nav__link">
+  <a href="#arm-module-requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Module Requirements
+      Arm Module Requirements
     </span>
   </a>
   
@@ -791,9 +791,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-requirements" class="md-nav__link">
+  <a href="#arm-module-requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Module Requirements
+      Arm Module Requirements
     </span>
   </a>
   
@@ -822,10 +822,10 @@
   
 
 
-  <h1>Module's Requirements</h1>
+  <h1>Arm Module's Requirements</h1>
 
-<h2 id="module-requirements">Module Requirements</h2>
-<p>The following sections document the requirements that the this module need to fulfills to .....</p>
+<h2 id="arm-module-requirements">Arm Module Requirements</h2>
+<p>The following table documents the requirements for the arm system of the ground search and rescue drone.</p>
 <table>
 <thead>
 <tr>
@@ -837,16 +837,16 @@
 </thead>
 <tbody>
 <tr>
-<td>Surface mounted, 3.3V switching power regulatore</td>
+<td>Surface mounted, 3.3V switching power regulator</td>
 <td>3.2 Volts</td>
 <td>3.3 Volts</td>
-<td style="text-align: center;">No</td>
+<td style="text-align: center;">NO</td>
 </tr>
 <tr>
 <td>Surface mounted microcontroller</td>
-<td>1 PIC or ESP</td>
-<td>8-bit PIC</td>
-<td style="text-align: center;">No</td>
+<td>uses 1 PIC or ESP</td>
+<td>uses ESP32</td>
+<td style="text-align: center;">NO</td>
 </tr>
 <tr>
 <td>Wireless Communication</td>
@@ -855,10 +855,52 @@
 <td style="text-align: center;">Yes</td>
 </tr>
 <tr>
-<td><em>Rest are items your modules needs to support the task you are covering for the team's device.</em></td>
-<td>---</td>
-<td>---</td>
-<td style="text-align: center;"><strong>NO</strong></td>
+<td>I2C or SPI</td>
+<td>At least one actuator uses I2C or SPI to communicate with microcontroller</td>
+<td>same as MoT</td>
+<td style="text-align: center;">NO</td>
+</tr>
+<tr>
+<td>Motors for arm must be permitted actuators</td>
+<td>Motor creates outside motion, requires custom non-trivial interface circuit or filtered analog input to connect to micrcontroller</td>
+<td>Creates outside motion and uses custom non-trivial interface circuit to connect to microcontroller.</td>
+<td style="text-align: center;">NO</td>
+</tr>
+<tr>
+<td>Software control of arm must not simply toggle a digital pin on and off.</td>
+<td>Microcontroller does inverse kinematics to determine input to motors.</td>
+<td>same as MoT</td>
+<td style="text-align: center;">NO</td>
+</tr>
+<tr>
+<td>Stable while moving</td>
+<td>Arm can still hold objects while driving at least 5 mph over dirt and gravel.</td>
+<td>Arm can still hold objects while driving at least 10 mph over dirt and gravel</td>
+<td style="text-align: center;">NO</td>
+</tr>
+<tr>
+<td>Human Design Interface; Respond manually with buttons</td>
+<td>Can manually control all actuators on arm,  read sensor data, modify setpoints, and toggle GPIO debug pins.</td>
+<td>Can do all that is required in MoT from exterior of device.</td>
+<td style="text-align: center;">NO</td>
+</tr>
+<tr>
+<td>Mechanism that can flip bot over if upside-down</td>
+<td>Arm can flip over device when instrutions are ran to flip it over.</td>
+<td>Flip over sequence succeeds 90% of the time and does not intefere with a 3x3 ft area around it.</td>
+<td style="text-align: center;">YES</td>
+</tr>
+<tr>
+<td>Mechanism to pick up, manipulate objects, and store objects</td>
+<td>Can manipulate small solid objects (3x3x3 in. max, 1 lb) and move them to desired X, Y, Z, coordinates relative to drone.</td>
+<td>Same as MoT</td>
+<td style="text-align: center;">NO</td>
+</tr>
+<tr>
+<td>Drone must be powered by onboard battery connected to a switching regulator.</td>
+<td>Microcontroller and peripherals for arm are powered by a switching regulator connected to an onboard battery.</td>
+<td>Same as MoT</td>
+<td style="text-align: center;">NO</td>
 </tr>
 </tbody>
 </table>
