@@ -1,5 +1,5 @@
 ---
-title: Module's Block Diagram
+title: Arm System Block Diagram
 tags:
 - tag1
 - tag2
@@ -18,7 +18,7 @@ Things to mention are:
 To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
+## Arm System Block Diagram
 
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+
+![Individual Block diagram](block_diagram.png)
