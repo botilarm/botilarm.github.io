@@ -1,0 +1,160 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.3.7">
+  <diagram name="Page-1" id="Te_1k3V8Dgl-8v5-Qwvu">
+    <mxGraphModel dx="1368" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-107" parent="1" style="whiteSpace=wrap;html=1;fillColor=none;dashed=1;" value="" vertex="1">
+          <mxGeometry height="570" width="140" x="60" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-108" parent="1" style="whiteSpace=wrap;html=1;fillColor=none;dashed=1;" value="" vertex="1">
+          <mxGeometry height="480" width="740" x="200" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=18;" value="&lt;div&gt;&lt;b&gt;Block Diagram -- Armando Botiller (Arm system)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Team 303 (ground exploration bot): Armando Botiller&lt;/div&gt;&lt;div&gt;Matthew Sanderson, Khalid Hamdan, Vedaa Ubale, Lia Ryan, Manuel Castro.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="480" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-2" parent="1" style="whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" value="&lt;div&gt;Microcontroller&lt;/div&gt;&lt;div&gt;(Espressif Systems&lt;/div&gt;&lt;div&gt;ESP32-VROOM-32D)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="260" x="620" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-55" edge="1" parent="1" source="7Y58ep6LZhlwoz7FDctB-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="7Y58ep6LZhlwoz7FDctB-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-9" parent="1" style="whiteSpace=wrap;html=1;labelBackgroundColor=default;" value="&lt;div&gt;&lt;span style=&quot;&quot;&gt;12V 3A DC Wall Power supply&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 0), rgb(237, 237, 237));&quot;&gt;(Manufacturer part #)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="60" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-103" edge="1" parent="1" source="7Y58ep6LZhlwoz7FDctB-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="7Y58ep6LZhlwoz7FDctB-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-109" connectable="0" parent="7Y58ep6LZhlwoz7FDctB-103" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="digital (4 pin)" vertex="1">
+          <mxGeometry relative="1" x="0.3714" y="-1" as="geometry">
+            <mxPoint x="-1" y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-50" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;div&gt;ICSP/USB&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="45" x="795" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-51" parent="1" style="whiteSpace=wrap;html=1;" value="PC" vertex="1">
+          <mxGeometry height="50" width="45" x="795" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-53" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=default;" value="&lt;div&gt;3.3 Switching Power Supply&lt;/div&gt;&lt;div&gt;(&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 0), rgb(237, 237, 237));&quot;&gt;Manufacturer Part #&lt;/span&gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="200" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-56" edge="1" parent="1" source="7Y58ep6LZhlwoz7FDctB-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="7Y58ep6LZhlwoz7FDctB-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-54" parent="1" style="whiteSpace=wrap;html=1;labelBackgroundColor=default;" value="&lt;div&gt;Barrel Jack Adapter&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="70" x="205" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-76" edge="1" parent="1" source="7Y58ep6LZhlwoz7FDctB-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="7Y58ep6LZhlwoz7FDctB-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-104" connectable="0" parent="7Y58ep6LZhlwoz7FDctB-76" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Digital (1 pin)" vertex="1">
+          <mxGeometry relative="1" x="0.0197" as="geometry">
+            <mxPoint x="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-60" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=default;" value="&lt;div&gt;Stepper motor driver&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 0);&quot;&gt;(Manufacturer part #)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="400" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-85" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="7Y58ep6LZhlwoz7FDctB-84">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="505" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-96" connectable="0" parent="7Y58ep6LZhlwoz7FDctB-85" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Digital (1 pin)" vertex="1">
+          <mxGeometry relative="1" x="-0.0388" y="4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-68" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=default;" value="&lt;div&gt;Stepper motor&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 0);&quot;&gt;(Manufacturer part #)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="160" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-89" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.511;entryY=-0.148;entryDx=0;entryDy=0;entryPerimeter=0;" target="7Y58ep6LZhlwoz7FDctB-87">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="570" as="sourcePoint" />
+            <mxPoint x="800" y="735" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-91" connectable="0" parent="7Y58ep6LZhlwoz7FDctB-89" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="digital/serial(1 pin)" vertex="1">
+          <mxGeometry relative="1" x="-0.3126" y="-1" as="geometry">
+            <mxPoint x="-4" y="91" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-69" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;div&gt;UART&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="105" x="715" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-74" edge="1" parent="1" source="7Y58ep6LZhlwoz7FDctB-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="7Y58ep6LZhlwoz7FDctB-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550.0000000000002" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-95" connectable="0" parent="7Y58ep6LZhlwoz7FDctB-74" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Digital (1 pin)" vertex="1">
+          <mxGeometry relative="1" x="0.134" as="geometry">
+            <mxPoint x="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-71" parent="1" style="whiteSpace=wrap;html=1;labelBackgroundColor=default;" value="GPIO" vertex="1">
+          <mxGeometry height="130" width="45" x="620" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-75" edge="1" parent="1" source="7Y58ep6LZhlwoz7FDctB-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="7Y58ep6LZhlwoz7FDctB-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-92" connectable="0" parent="7Y58ep6LZhlwoz7FDctB-75" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Digital/serial (3 pin)" vertex="1">
+          <mxGeometry relative="1" x="0.066" y="-1" as="geometry">
+            <mxPoint x="9" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-72" parent="1" style="whiteSpace=wrap;html=1;labelBackgroundColor=default;" value="&lt;div&gt;SPI&lt;/div&gt;&lt;div&gt;or&lt;/div&gt;&lt;div&gt;I2C&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="45" x="620" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-81" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=default;" value="&lt;div&gt;Stepper motor&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 0);&quot;&gt;(Manufacturer part #)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="160" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-82" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=default;" value="&lt;div&gt;Stepper motor&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 0);&quot;&gt;(Manufacturer part #)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="160" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-99" edge="1" parent="1" source="7Y58ep6LZhlwoz7FDctB-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="7Y58ep6LZhlwoz7FDctB-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-105" connectable="0" parent="7Y58ep6LZhlwoz7FDctB-99" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Digital (1 pin)" vertex="1">
+          <mxGeometry relative="1" x="0.1333" y="-2" as="geometry">
+            <mxPoint x="6" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-83" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=default;" value="&lt;div&gt;Stepper motor driver&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 0);&quot;&gt;(Manufacturer part #)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="400" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-101" edge="1" parent="1" source="7Y58ep6LZhlwoz7FDctB-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="7Y58ep6LZhlwoz7FDctB-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-106" connectable="0" parent="7Y58ep6LZhlwoz7FDctB-101" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Digital (1 pin)" vertex="1">
+          <mxGeometry relative="1" x="0.2242" y="-5" as="geometry">
+            <mxPoint x="13" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-84" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=default;" value="&lt;div&gt;Stepper motor driver&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 0);&quot;&gt;(Manufacturer part #)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="400" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-88" edge="1" parent="1" source="7Y58ep6LZhlwoz7FDctB-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="7Y58ep6LZhlwoz7FDctB-69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="643" y="640" />
+              <mxPoint x="741" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-90" connectable="0" parent="7Y58ep6LZhlwoz7FDctB-88" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="digital/serial(1 pin)" vertex="1">
+          <mxGeometry relative="1" x="-0.6923" as="geometry">
+            <mxPoint y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-86" parent="1" style="whiteSpace=wrap;html=1;" value="Upstream header" vertex="1">
+          <mxGeometry height="30" width="75" x="605" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="7Y58ep6LZhlwoz7FDctB-87" parent="1" style="whiteSpace=wrap;html=1;" value="Downstream header" vertex="1">
+          <mxGeometry height="30" width="80" x="760" y="690" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
