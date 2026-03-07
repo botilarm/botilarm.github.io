@@ -612,15 +612,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#actuator" class="md-nav__link">
-    <span class="md-ellipsis">
-      Actuator
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -640,15 +631,6 @@
   <a href="#secondary-actuators" class="md-nav__link">
     <span class="md-ellipsis">
       Secondary actuators
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
     </span>
   </a>
   
@@ -866,15 +848,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#actuator" class="md-nav__link">
-    <span class="md-ellipsis">
-      Actuator
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -894,15 +867,6 @@
   <a href="#secondary-actuators" class="md-nav__link">
     <span class="md-ellipsis">
       Secondary actuators
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
     </span>
   </a>
   
@@ -943,13 +907,6 @@
 <h3 id="power-management">Power Management</h3>
 <p>(<strong>remove this note/placeholder</strong>: this is where your 3.3 volt switching regulator, any other needed power regulator, and power source {if applicable} <strong>THAT WERE SELECTED</strong>)</p>
 <p>For more details, review the <a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management">"Appendix - Component Selection Process - Power Mangement"</a> selection.</p>
-<h3 id="actuator">Actuator</h3>
-<p>(<strong>remove this note/placeholder</strong>: if applicable, this is where your <strong>Selected</strong> the actuator items go, which includes both the driver and motor. Otherwise, remove this section.)</p>
-<p>For more details, review the <a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#actuator">"Appendix - Component Selection Process - Actuator"</a> selection.</p>
-<hr>
-<blockquote>
-<p>Remove the following before submitting! Use them to present the selected components</p>
-</blockquote>
 <h2 id="modules-considered-major-components">Module's Considered Major Components</h2>
 <h3 id="secondary-actuators">Secondary actuators</h3>
 <p><em>Table 1: Secondary actuators component selection</em>
@@ -957,45 +914,6 @@
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SERVO1.jpg" data-desc-position="bottom"><img alt="" src="../SERVO1.jpg"></a><br> SER0056 2KG 300 CLUTCH SERVO<br><span class="arithmatex">\(6/each&lt;br&gt;[link to product](https://www.digikey.com/en/products/detail/dfrobot/SER0056/13545236)  | \* Inexpensive&lt;br&gt;\* High torque&lt;br&gt;\*Clutch system and electrical protection prevents damage to motor when motor is blocked from rotating.&lt;br&gt; \* 300 degree range.&lt;br&gt; \* Easy to control with PWM signal.&lt;br&gt;\* Plastic gears make servo lighter, self lubricating, and more vibration dampening.&lt;br&gt;  | \* Cannot meet serial communication for actuator requirement.&lt;br&gt;\* 300 degree range is superfluous for design as only 180 degrees is required.&lt;br&gt;|
 | ![](SERVO2.jpg)&lt;br&gt; SER0011 SERVOMOTOR RC 6V MICRO METAL GEAR&lt;br&gt;\)</span>8.62/each<br><a href="https://www.digikey.com/en/products/detail/dfrobot/SER0011/7087129">link to product</a> | * Fairly inexpensive<br>* 2.5 kg torque<br>* Metal gears less likely to be stripped by softer structural links attached to motor.             | *Cannot meeet serial communication for actuator requirement.</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier ....</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
-<p><strong>External Clock Module</strong></p>
-<ol>
-<li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
-</tr>
-<tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
-</tr>
-<tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-<p><strong>Rationale:</strong> A clock oscillator is easier ...</p>
 
 
 
