@@ -14,11 +14,6 @@ Things to mention are:
 * team connections
 * Power source
 * ...
-
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
-
-
+* 
 ## Arm System Block Diagram
-
-
 ![Individual Block diagram](block_diagram.png)
