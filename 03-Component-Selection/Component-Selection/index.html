@@ -645,15 +645,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#secondary-actuators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Secondary actuators
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -899,15 +890,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#secondary-actuators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Secondary actuators
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -960,18 +942,27 @@ For more details, review the <a href="https://embedded-systems-design.github.io/
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../controller1.png" data-desc-position="bottom"><img alt="" src="../controller1.png"></a><br> A4988SETTR-T IC MTR DRVR BIPOLAR 3-5.5V 28QFN<br>$11.84/each<br><a href="https://www.digikey.com/en/products/detail/olimex-ltd/SM-42HB34F08AB/21662229">link to product</a></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../controller1.png" data-desc-position="bottom"><img alt="" src="../controller1.png"></a><br>A4988SETTR-T IC MTR DRVR BIPOLAR 3-5.5V 28QFN<br>$11.84/each<br><a href="https://www.digikey.com/en/products/detail/olimex-ltd/SM-42HB34F08AB/21662229">link to product</a></td>
 <td>* Inexpensive<br>* Lots of documentation to help implement.<br>* Works within same voltage level as selected ESP32 microcontroller.<br>* Can control selected bipolar primary actuator with reasonable accuracy.</td>
 <td>* No serial communication options: only logic using 7 wires.</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../controller2.png" data-desc-position="bottom"><img alt="" src="../controller2.png"></a><br> TMC2225-SA-T IC MTR DRV 4.75-36V HTSSOP28<br>$4.61/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC2225-SA-T/13996142">link to product</a></td>
-<td>* Relatively inexpensive compared to other TMC controllers.<br>* Ultra silent control.<br>* Works within same voltage level of microcontroller.<br>* More than enough maximum current output to control selected stepper motor.<br>* Uses SPI or UART serial communication protocols.</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../controller2.png" data-desc-position="bottom"><img alt="" src="../controller2.png"></a><br>TMC2225-SA-T IC MTR DRV 4.75-36V HTSSOP28<br>$4.61/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC2225-SA-T/13996142">link to product</a></td>
+<td>* Relatively inexpensive compared to other TMC controllers.<br>* Ultra silent control.<br>* Works within same voltage level of microcontroller.<br>* More than enough maximum current output to control selected stepper motor.<br>* Uses UART serial communication protocol.</td>
+<td>* Does not fulfill requirement of using SPI or I2C.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../controller3.png" data-desc-position="bottom"><img alt="" src="../controller3.png"></a><br>505-TMC4210-I-ND IC MTR DRV BIPOLAR 3.3-5V 16SSOP<br>$8.55/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC4210-I/4500213">link to product</a></td>
+<td>* uses SPI</td>
+<td></td>
+</tr>
+<tr>
+<td>### Secondary actuators</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h3 id="secondary-actuators">Secondary actuators</h3>
 <p><em>Table 2: Secondary actuators component selection</em>
 | <strong>Component</strong>                                                                                                                                                                                      | <strong>Pros</strong>                                                                                                           | <strong>Cons</strong>                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
