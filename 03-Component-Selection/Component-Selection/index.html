@@ -628,6 +628,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#primary-actuator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary actuator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primary-actuator-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary actuator controller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#secondary-actuators" class="md-nav__link">
     <span class="md-ellipsis">
       Secondary actuators
@@ -864,6 +882,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#primary-actuator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary actuator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primary-actuator-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary actuator controller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#secondary-actuators" class="md-nav__link">
     <span class="md-ellipsis">
       Secondary actuators
@@ -905,11 +941,33 @@
 <h2 id="modules-selected-major-components">Module's Selected Major Components</h2>
 <p>The following sections are the selected major components necessary for the arm system.</p>
 <h3 id="power-management">Power Management</h3>
-<p>(<strong>remove this note/placeholder</strong>: this is where your 3.3 volt switching regulator, any other needed power regulator, and power source {if applicable} <strong>THAT WERE SELECTED</strong>)</p>
-<p>For more details, review the <a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management">"Appendix - Component Selection Process - Power Mangement"</a> selection.</p>
+<p>(<strong>remove this note/placeholder</strong>: this is where your 3.3 volt switching regulator, any other needed power regulator, and power source {if applicable} <strong>THAT WERE SELECTED</strong>)
+For more details, review the <a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management">"Appendix - Component Selection Process - Power Mangement"</a> selection.</p>
 <h2 id="modules-considered-major-components">Module's Considered Major Components</h2>
+<h3 id="primary-actuator">Primary actuator</h3>
+<p><em>Table 1: Primary actuators component selection</em>
+| <strong>Component</strong>                                                                                                                                                                                     | <strong>Pros</strong>                                                                                                           | <strong>Cons</strong>                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../stepper1.png" data-desc-position="bottom"><img alt="" src="../stepper1.png"></a><br> SM-42HB34F08AB STEP MOTOR HYBRID BIPOLAR 12VDC<br>$11.84/each<br><a href="https://www.digikey.com/en/products/detail/olimex-ltd/SM-42HB34F08AB/21662229">link to product</a>  | * Inexpensive<br>* High holding torque 31.15 oz-in easier to implement without gearbox<br> | * Limited datasheet page|</p>
+<h3 id="primary-actuator-controller">Primary actuator controller</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../controller1.png" data-desc-position="bottom"><img alt="" src="../controller1.png"></a><br> A4988SETTR-T IC MTR DRVR BIPOLAR 3-5.5V 28QFN<br>$11.84/each<br><a href="https://www.digikey.com/en/products/detail/olimex-ltd/SM-42HB34F08AB/21662229">link to product</a></td>
+<td>* Inexpensive<br>* Lots of documentation to help implement.<br>* Works within same voltage level as selected ESP32 microcontroller.<br>* Can control selected bipolar primary actuator with reasonable accuracy.</td>
+<td>* No serial communication options: only logic using 7 wires.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="secondary-actuators">Secondary actuators</h3>
-<p><em>Table 1: Secondary actuators component selection</em>
+<p><em>Table 2: Secondary actuators component selection</em>
 | <strong>Component</strong>                                                                                                                                                                                      | <strong>Pros</strong>                                                                                                           | <strong>Cons</strong>                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SERVO1.jpg" data-desc-position="bottom"><img alt="" src="../SERVO1.jpg"></a><br> SER0056 2KG 300 CLUTCH SERVO<br><span class="arithmatex">\(6/each&lt;br&gt;[link to product](https://www.digikey.com/en/products/detail/dfrobot/SER0056/13545236)  | \* Inexpensive&lt;br&gt;\* High torque&lt;br&gt;\*Clutch system and electrical protection prevents damage to motor when motor is blocked from rotating.&lt;br&gt; \* 300 degree range.&lt;br&gt; \* Easy to control with PWM signal.&lt;br&gt;\* Plastic gears make servo lighter, self lubricating, and more vibration dampening.&lt;br&gt;  | \* Cannot meet serial communication for actuator requirement.&lt;br&gt;\* 300 degree range is superfluous for design as only 180 degrees is required.&lt;br&gt;|
