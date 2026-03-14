@@ -663,6 +663,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#secondary-actuators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secondary actuators
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -926,6 +935,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#secondary-actuators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secondary actuators
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -962,16 +980,42 @@
 <h3 id="33v-regulator">3.3V Regulator</h3>
 <p><em>Table 1: 3.3V Regulator component selection</em></p>
 <h3 id="5v-regulator">5V Regulator</h3>
-<p><em>Table 2: 5V Regulator component selection</em>
-|<strong>Component</strong>                                                                                                                                                                      |<strong>Pros</strong>                                                                                                                                             |<strong>Cons</strong>                                                |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../5Vreg1.png" data-desc-position="bottom"><img alt="" src="../5Vreg1.png"></a><br>AP1509-50SG-13 IC REG BUCK 5V 2A 8SOP<br>$1.21/each<br><a href="https://www.digikey.com/en/products/detail/diodes-incorporated/AP1509-50SG-13/1301328">link to product</a>|* 8SOP package fairly easy to manually solder.<br>* 2A is more than enough to drive three 5V RC Servos.<br>* More efficient than linear regulator.|* Requires more complex circuity than linear regulator.|</p>
+<p><em>Table 2: 5V Regulator component selection</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../5Vreg1.png" data-desc-position="bottom"><img alt="" src="../5Vreg1.png"></a><br>AP1509-50SG-13 IC REG BUCK 5V 2A 8SOP<br>$1.21/each<br><a href="https://www.digikey.com/en/products/detail/diodes-incorporated/AP1509-50SG-13/1301328">link to product</a></td>
+<td>* 8SOP package fairly easy to manually solder.<br>* 2A is more than enough to drive three 5V RC Servos.<br>* More efficient than linear regulator.</td>
+<td>* Requires more complex circuity than linear regulator.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="arm-actuation">Arm Actuation</h2>
 <h3 id="primary-actuator">Primary actuator</h3>
-<p><em>Table 3: Primary actuators component selection</em>
-| <strong>Component</strong>                                                                                                                                                                                     | <strong>Pros</strong>                                                                                                           | <strong>Cons</strong>                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../stepper1.png" data-desc-position="bottom"><img alt="" src="../stepper1.png"></a><br> SM-42HB34F08AB STEP MOTOR HYBRID BIPOLAR 12VDC<br>$11.84/each<br><a href="https://www.digikey.com/en/products/detail/olimex-ltd/SM-42HB34F08AB/21662229">link to product</a>  | * Inexpensive<br>* High holding torque 31.15 oz-in easier to implement without gearbox<br> | * Limited datasheet page|</p>
+<p><em>Table 3: Primary actuators component selection</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../stepper1.png" data-desc-position="bottom"><img alt="" src="../stepper1.png"></a><br> SM-42HB34F08AB STEP MOTOR HYBRID BIPOLAR 12VDC<br>$11.84/each<br><a href="https://www.digikey.com/en/products/detail/olimex-ltd/SM-42HB34F08AB/21662229">link to product</a></td>
+<td>* Inexpensive<br>* High holding torque 31.15 oz-in easier to implement without gearbox<br></td>
+<td>* Limited datasheet page</td>
+</tr>
+</tbody>
+</table>
 <h3 id="primary-actuator-controller">Primary actuator controller</h3>
 <table>
 <thead>
@@ -1002,13 +1046,9 @@
 <td>* Uses SPI and Step/Dir control.<br>* Operates within 3.3V, same as microcontroller.<br>*Can supply 2A, well above absolute max draw of selected stepper motor.</td>
 <td>* Expensive compared to other options.</td>
 </tr>
-<tr>
-<td>### Secondary actuators</td>
-<td></td>
-<td></td>
-</tr>
 </tbody>
 </table>
+<h3 id="secondary-actuators">Secondary actuators</h3>
 <p><em>Table 2: Secondary actuators component selection</em>
 | <strong>Component</strong>                                                                                                                                                                                      | <strong>Pros</strong>                                                                                                           | <strong>Cons</strong>                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
