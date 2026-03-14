@@ -6,8 +6,8 @@ title: Module Schematic
 
 This schematic design is for the arm subsystem of SABLE.
 
-<object data="docs\05-Schematic\sable_arm.pdf" type="application/pdf" width="100%" height="500px">
-      <p>Unable to display PDF file. <a href="docs\05-Schematic\sable_arm.pdf">Download</a> instead.</p>
+<object data="https://botilarm.github.io/05-Schematic/sable_arm.pdf" type="application/pdf" width="100%" height="500px">
+      <p>Unable to display PDF file. <a href="https://botilarm.github.io/05-Schematic/sable_arm.pdf">Download</a> instead.</p>
 
 
 ## Resources
