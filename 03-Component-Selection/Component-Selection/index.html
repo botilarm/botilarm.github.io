@@ -600,13 +600,31 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Module's Selected Major Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#power-management" class="md-nav__link">
     <span class="md-ellipsis">
       Power Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#33v-regulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3V Regulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5v-regulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      5V Regulator
     </span>
   </a>
   
@@ -618,13 +636,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules-considered-major-components" class="md-nav__link">
+  <a href="#arm-actuation" class="md-nav__link">
     <span class="md-ellipsis">
-      Module's Considered Major Components
+      Arm Actuation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Module's Considered Major Components">
+    <nav class="md-nav" aria-label="Arm Actuation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -845,13 +863,31 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Module's Selected Major Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#power-management" class="md-nav__link">
     <span class="md-ellipsis">
       Power Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#33v-regulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3V Regulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5v-regulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      5V Regulator
     </span>
   </a>
   
@@ -863,13 +899,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules-considered-major-components" class="md-nav__link">
+  <a href="#arm-actuation" class="md-nav__link">
     <span class="md-ellipsis">
-      Module's Considered Major Components
+      Arm Actuation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Module's Considered Major Components">
+    <nav class="md-nav" aria-label="Arm Actuation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -922,12 +958,17 @@
 
 <h2 id="modules-selected-major-components">Module's Selected Major Components</h2>
 <p>The following sections are the selected major components necessary for the arm system.</p>
-<h3 id="power-management">Power Management</h3>
-<p>(<strong>remove this note/placeholder</strong>: this is where your 3.3 volt switching regulator, any other needed power regulator, and power source {if applicable} <strong>THAT WERE SELECTED</strong>)
-For more details, review the <a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management">"Appendix - Component Selection Process - Power Mangement"</a> selection.</p>
-<h2 id="modules-considered-major-components">Module's Considered Major Components</h2>
+<h2 id="power-management">Power Management</h2>
+<h3 id="33v-regulator">3.3V Regulator</h3>
+<p><em>Table 1: 3.3V Regulator component selection</em></p>
+<h3 id="5v-regulator">5V Regulator</h3>
+<p><em>Table 2: 5V Regulator component selection</em>
+|<strong>Component</strong>                                                                                                                                                                      |<strong>Pros</strong>                                                                                                                                             |<strong>Cons</strong>                                                |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../5Vreg1.png" data-desc-position="bottom"><img alt="" src="../5Vreg1.png"></a><br>AP1509-50SG-13 IC REG BUCK 5V 2A 8SOP<br>$1.21/each<br><a href="https://www.digikey.com/en/products/detail/diodes-incorporated/AP1509-50SG-13/1301328">link to product</a>|* 8SOP package fairly easy to manually solder.<br>* 2A is more than enough to drive three 5V RC Servos.<br>* More efficient than linear regulator.|* Requires more complex circuity than linear regulator.|</p>
+<h2 id="arm-actuation">Arm Actuation</h2>
 <h3 id="primary-actuator">Primary actuator</h3>
-<p><em>Table 1: Primary actuators component selection</em>
+<p><em>Table 3: Primary actuators component selection</em>
 | <strong>Component</strong>                                                                                                                                                                                     | <strong>Pros</strong>                                                                                                           | <strong>Cons</strong>                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
 | <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../stepper1.png" data-desc-position="bottom"><img alt="" src="../stepper1.png"></a><br> SM-42HB34F08AB STEP MOTOR HYBRID BIPOLAR 12VDC<br>$11.84/each<br><a href="https://www.digikey.com/en/products/detail/olimex-ltd/SM-42HB34F08AB/21662229">link to product</a>  | * Inexpensive<br>* High holding torque 31.15 oz-in easier to implement without gearbox<br> | * Limited datasheet page|</p>
@@ -943,8 +984,8 @@ For more details, review the <a href="https://embedded-systems-design.github.io/
 <tbody>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../controller1.png" data-desc-position="bottom"><img alt="" src="../controller1.png"></a><br>A4988SETTR-T IC MTR DRVR BIPOLAR 3-5.5V 28QFN<br>$11.84/each<br><a href="https://www.digikey.com/en/products/detail/olimex-ltd/SM-42HB34F08AB/21662229">link to product</a></td>
-<td>* Inexpensive<br>* Lots of documentation to help implement.<br>* Works within same voltage level as selected ESP32 microcontroller.<br>* Can control selected bipolar primary actuator with reasonable accuracy.</td>
-<td>* No serial communication options: only logic using 7 wires.</td>
+<td>* Lots of documentation to help implement.<br>* Works within same voltage level as selected ESP32 microcontroller.<br>* Can control selected bipolar primary actuator with reasonable accuracy.</td>
+<td>* No serial communication options: only logic using 7 wires.<br>* Expensive compared to simpler options.</td>
 </tr>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../controller2.png" data-desc-position="bottom"><img alt="" src="../controller2.png"></a><br>TMC2225-SA-T IC MTR DRV 4.75-36V HTSSOP28<br>$4.61/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC2225-SA-T/13996142">link to product</a></td>
@@ -953,8 +994,13 @@ For more details, review the <a href="https://embedded-systems-design.github.io/
 </tr>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../controller3.png" data-desc-position="bottom"><img alt="" src="../controller3.png"></a><br>505-TMC4210-I-ND IC MTR DRV BIPOLAR 3.3-5V 16SSOP<br>$8.55/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC4210-I/4500213">link to product</a></td>
-<td>* uses SPI</td>
-<td></td>
+<td>* Uses SPI<br>* Device takes computational load off of microcontroller for STEP/DIR control</td>
+<td>* Still requires motor driver to control stepper motor.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../controller4.png" data-desc-position="bottom"><img alt="" src="../controller4.png"></a><br>TMC260C-PA IC MTR DRV BIPOLAR 3-5.25V 44QFP<br>$10.12/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC260C-PA/6154233">link to product</a></td>
+<td>* Uses SPI and Step/Dir control.<br>* Operates within 3.3V, same as microcontroller.<br>*Can supply 2A, well above absolute max draw of selected stepper motor.</td>
+<td>* Expensive compared to other options.</td>
 </tr>
 <tr>
 <td>### Secondary actuators</td>
@@ -967,7 +1013,13 @@ For more details, review the <a href="https://embedded-systems-design.github.io/
 | <strong>Component</strong>                                                                                                                                                                                      | <strong>Pros</strong>                                                                                                           | <strong>Cons</strong>                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SERVO1.jpg" data-desc-position="bottom"><img alt="" src="../SERVO1.jpg"></a><br> SER0056 2KG 300 CLUTCH SERVO<br><span class="arithmatex">\(6/each&lt;br&gt;[link to product](https://www.digikey.com/en/products/detail/dfrobot/SER0056/13545236)  | \* Inexpensive&lt;br&gt;\* High torque&lt;br&gt;\*Clutch system and electrical protection prevents damage to motor when motor is blocked from rotating.&lt;br&gt; \* 300 degree range.&lt;br&gt; \* Easy to control with PWM signal.&lt;br&gt;\* Plastic gears make servo lighter, self lubricating, and more vibration dampening.&lt;br&gt;  | \* Cannot meet serial communication for actuator requirement.&lt;br&gt;\* 300 degree range is superfluous for design as only 180 degrees is required.&lt;br&gt;|
-| ![](SERVO2.jpg)&lt;br&gt; SER0011 SERVOMOTOR RC 6V MICRO METAL GEAR&lt;br&gt;\)</span>8.62/each<br><a href="https://www.digikey.com/en/products/detail/dfrobot/SER0011/7087129">link to product</a> | * Fairly inexpensive<br>* 2.5 kg torque<br>* Metal gears less likely to be stripped by softer structural links attached to motor.             | *Cannot meeet serial communication for actuator requirement.</p>
+| ![](SERVO2.jpg)&lt;br&gt; SER0011 SERVOMOTOR RC 6V MICRO METAL GEAR&lt;br&gt;\)</span>8.62/each<br><a href="https://www.digikey.com/en/products/detail/dfrobot/SER0011/7087129">link to product</a> | * Fairly inexpensive<br>* 2.5 kg torque<br>* Metal gears less likely to be stripped by softer structural links attached to motor.             | *Cannot meeet serial communication for actuator requirement.|
+| <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SERVO3.png" data-desc-position="bottom"><img alt="" src="../SERVO3.png"></a><br> SER0039 SERVOMOTOR RC 5V 9G METAL GEAR<br>$5.90/each<br><a href="https://www.digikey.com/en/products/detail/dfrobot/SER0039/7087152">link to product</a>| * Operates at more standard voltage for which there are inexpensive off the shelf regulators. | * Suffers from backlash and angles not as accurate as stepper or higher precision servo. |</p>
+<p><strong>Selected component: SER0039 SERVOMOTOR RC 5V 9G METAL GEAR</strong>
+ <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SERVO3.png" data-desc-position="bottom"><img alt="" src="../SERVO3.png"></a>
+* $5.90/each
+* <a href="https://www.digikey.com/en/products/detail/dfrobot/SER0039/7087152">link to product</a>
+* <strong>Reasoning:</strong> The other considered servomotors have enticing features but would require a non-standard and expensive 6V regulator with at least 1A of output because all three servos in a 3 degree of freedom manipulator stalled would pull ~900mA total. This one operates at 5V making it easier to select a buck converter that can supply enough current for it.</p>
 
 
 
