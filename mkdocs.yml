@@ -6,8 +6,8 @@ theme:
   name: material
   custom_dir: custom_theme/
   palette:
-    primary: grey
-    accent: blue
+    primary: green
+    accent: white
   font:
     text: Arial
   logo: static/logo314.svg
