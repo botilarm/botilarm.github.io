@@ -50,7 +50,7 @@ The following sections are the selected major components necessary for the arm s
 | ![](SERVO3.png)<br> SER0039 SERVOMOTOR RC 5V 9G METAL GEAR<br>$5.90/each<br>[link to product](https://www.digikey.com/en/products/detail/dfrobot/SER0039/7087152)| \* Operates at more standard voltage for which there are inexpensive off the shelf regulators. | * Suffers from backlash and angles not as accurate as stepper or higher precision servo. |
 
 **Selected component: SER0039 SERVOMOTOR RC 5V 9G METAL GEAR**
- ![](SERVO3.png)
-* $5.90/each
-* [link to product](https://www.digikey.com/en/products/detail/dfrobot/SER0039/7087152)
+![](SERVO3.png)
+* $5.90/each<br>
+* [link to product](https://www.digikey.com/en/products/detail/dfrobot/SER0039/7087152)<br>
 * **Reasoning:** The other considered servomotors have enticing features but would require a non-standard and expensive 6V regulator with at least 1A of output because all three servos in a 3 degree of freedom manipulator stalled would pull ~900mA total. This one operates at 5V making it easier to select a buck converter that can supply enough current for it.
