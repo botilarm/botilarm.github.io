@@ -7,30 +7,38 @@ title: Module's Selected Major Components
 The following sections are the selected major components necessary for the arm system.
 
 ## Power Management
+
 ### 3.3V Regulator
+
 *Table 1: 3.3V Regulator component selection*
 
 ### 5V Regulator
+
 *Table 2: 5V Regulator component selection*
+
 |**Component**                                                                                                                                                                      |**Pros**                                                                                                                                             |**Cons**                                                |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
 | ![](5Vreg1.png)<br>AP1509-50SG-13 IC REG BUCK 5V 2A 8SOP<br>$1.21/each<br>[link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP1509-50SG-13/1301328)|\* 8SOP package fairly easy to manually solder.<br>\* 2A is more than enough to drive three 5V RC Servos.<br>\* More efficient than linear regulator.|\* Requires more complex circuity than linear regulator.|
 
 ## Arm Actuation
+
 ### Primary actuator
 
 *Table 3: Primary actuators component selection*
+
 | **Component**                                                                                                                                                                                     | **Pros**                                                                                                           | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
 | ![](stepper1.png)<br> SM-42HB34F08AB STEP MOTOR HYBRID BIPOLAR 12VDC<br>$11.84/each<br>[link to product](https://www.digikey.com/en/products/detail/olimex-ltd/SM-42HB34F08AB/21662229)  | \* Inexpensive<br>\* High holding torque 31.15 oz-in easier to implement without gearbox<br> | \* Limited datasheet page|
 
 ### Primary actuator controller
+
 | **Component**                                                                                                                                                                                     | **Pros**                                                                                                           | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
 | ![](controller1.png)<br>A4988SETTR-T IC MTR DRVR BIPOLAR 3-5.5V 28QFN<br>$11.84/each<br>[link to product](https://www.digikey.com/en/products/detail/olimex-ltd/SM-42HB34F08AB/21662229)  | \* Lots of documentation to help implement.<br>\* Works within same voltage level as selected ESP32 microcontroller.<br>\* Can control selected bipolar primary actuator with reasonable accuracy. | \* No serial communication options: only logic using 7 wires.<br>\* Expensive compared to simpler options.|
 | ![](controller2.png)<br>TMC2225-SA-T IC MTR DRV 4.75-36V HTSSOP28<br>$4.61/each<br>[link to product](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC2225-SA-T/13996142)|\* Relatively inexpensive compared to other TMC controllers.<br>\* Ultra silent control.<br>\* Works within same voltage level of microcontroller.<br>\* More than enough maximum current output to control selected stepper motor.<br>\* Uses UART serial communication protocol.| \* Does not fulfill requirement of using SPI or I2C.|
 | ![](controller3.png)<br>505-TMC4210-I-ND IC MTR DRV BIPOLAR 3.3-5V 16SSOP<br>$8.55/each<br>[link to product](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC4210-I/4500213)|\* Uses SPI<br>\* Device takes computational load off of microcontroller for STEP/DIR control|\* Still requires motor driver to control stepper motor.|
 | ![](controller4.png)<br>TMC260C-PA IC MTR DRV BIPOLAR 3-5.25V 44QFP<br>$10.12/each<br>[link to product](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC260C-PA/6154233)|\* Uses SPI and Step/Dir control.<br>\* Operates within 3.3V, same as microcontroller.<br>\*Can supply 2A, well above absolute max draw of selected stepper motor.|\* Expensive compared to other options.|
+
 ### Secondary actuators
 
 *Table 2: Secondary actuators component selection*
