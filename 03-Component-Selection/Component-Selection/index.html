@@ -1049,12 +1049,33 @@
 </tbody>
 </table>
 <h3 id="secondary-actuators">Secondary actuators</h3>
-<p><em>Table 2: Secondary actuators component selection</em>
-| <strong>Component</strong>                                                                                                                                                                                      | <strong>Pros</strong>                                                                                                           | <strong>Cons</strong>                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SERVO1.jpg" data-desc-position="bottom"><img alt="" src="../SERVO1.jpg"></a><br> SER0056 2KG 300 CLUTCH SERVO<br><span class="arithmatex">\(6/each&lt;br&gt;[link to product](https://www.digikey.com/en/products/detail/dfrobot/SER0056/13545236)  | \* Inexpensive&lt;br&gt;\* High torque&lt;br&gt;\*Clutch system and electrical protection prevents damage to motor when motor is blocked from rotating.&lt;br&gt; \* 300 degree range.&lt;br&gt; \* Easy to control with PWM signal.&lt;br&gt;\* Plastic gears make servo lighter, self lubricating, and more vibration dampening.&lt;br&gt;  | \* Cannot meet serial communication for actuator requirement.&lt;br&gt;\* 300 degree range is superfluous for design as only 180 degrees is required.&lt;br&gt;|
-| ![](SERVO2.jpg)&lt;br&gt; SER0011 SERVOMOTOR RC 6V MICRO METAL GEAR&lt;br&gt;\)</span>8.62/each<br><a href="https://www.digikey.com/en/products/detail/dfrobot/SER0011/7087129">link to product</a> | * Fairly inexpensive<br>* 2.5 kg torque<br>* Metal gears less likely to be stripped by softer structural links attached to motor.             | *Cannot meeet serial communication for actuator requirement.|
-| <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SERVO3.png" data-desc-position="bottom"><img alt="" src="../SERVO3.png"></a><br> SER0039 SERVOMOTOR RC 5V 9G METAL GEAR<br>$5.90/each<br><a href="https://www.digikey.com/en/products/detail/dfrobot/SER0039/7087152">link to product</a>| * Operates at more standard voltage for which there are inexpensive off the shelf regulators. | * Suffers from backlash and angles not as accurate as stepper or higher precision servo. |</p>
+<p><em>Table 2: Secondary actuators component selection</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SERVO1.jpg" data-desc-position="bottom"><img alt="" src="../SERVO1.jpg"></a><br> SER0056 2KG 300 CLUTCH SERVO<br>$6/each<br><a href="https://www.digikey.com/en/products/detail/dfrobot/SER0056/13545236">link to product</a></td>
+<td>* Inexpensive<br>* High torque<br>*Clutch system and electrical protection prevents damage to motor when motor is blocked from rotating.<br> * 300 degree range.<br> * Easy to control with PWM signal.<br>* Plastic gears make servo lighter, self lubricating, and more vibration dampening.<br></td>
+<td>* Cannot meet serial communication for actuator requirement.<br>* 300 degree range is superfluous for design as only 180 degrees is required.<br></td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SERVO2.jpg" data-desc-position="bottom"><img alt="" src="../SERVO2.jpg"></a><br> SER0011 SERVOMOTOR RC 6V MICRO METAL GEAR<br>$8.62/each<br><a href="https://www.digikey.com/en/products/detail/dfrobot/SER0011/7087129">link to product</a></td>
+<td>* Fairly inexpensive<br>* 2.5 kg torque<br>* Metal gears less likely to be stripped by softer structural links attached to motor.</td>
+<td>*Cannot meeet serial communication for actuator requirement.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SERVO3.png" data-desc-position="bottom"><img alt="" src="../SERVO3.png"></a><br> SER0039 SERVOMOTOR RC 5V 9G METAL GEAR<br>$5.90/each<br><a href="https://www.digikey.com/en/products/detail/dfrobot/SER0039/7087152">link to product</a></td>
+<td>* Operates at more standard voltage for which there are inexpensive off the shelf regulators.</td>
+<td>* Suffers from backlash and angles not as accurate as stepper or higher precision servo.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Selected component: SER0039 SERVOMOTOR RC 5V 9G METAL GEAR</strong>
  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SERVO3.png" data-desc-position="bottom"><img alt="" src="../SERVO3.png"></a>
 * $5.90/each
