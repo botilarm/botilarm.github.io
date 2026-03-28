@@ -52,7 +52,7 @@ This page is for describing the Application Programming Interface for controllin
 | Variable name | msg_type | ser_claw |
 | Variable type | uint8_t  | uint8_t  |
 | Min value     | 1        | 0        |
-| Max value     | 8        | 1        |
+| Max value     | 7        | 1        |
 | Example       | 5        | 0        |
 
 **Message type 6 - Arm collection/deposit completed**
@@ -62,7 +62,7 @@ This page is for describing the Application Programming Interface for controllin
 | Variable name | msg_type | collected | deposited |
 | Variable type | uint8_t  | uint8_t   | uint8_t   |
 | Min value     | 1        | 0         | 0         |
-| Max value     | 8        | 1         | 1         |
+| Max value     | 7        | 1         | 1         |
 | Example       | 6        | 0         | 1         |
 
 **Message type 7 - Collection finished, Drive OK to move**
@@ -72,15 +72,5 @@ This page is for describing the Application Programming Interface for controllin
 | Variable name | msg_type | DRV_OK   |
 | Variable type | uint8_t  | uint8_t  |
 | Min value     | 1        | 0        |
-| Max value     | 8        | 1        |
+| Max value     | 7        | 1        |
 | Example       | 7        | 0        |
-
-**Message type 8 - Undefined message received**
-
-|               |**Byte 1**|**Byte 2**|
-|---------------|----------|----------|
-| Variable name | msg_type | SRC_ID   |
-| Variable type | uint8_t  | uint8_t  |
-| Min value     | 1        | 0        |
-| Max value     | 8        | 0        |
-| Example       | 8        | 0        |
