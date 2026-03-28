@@ -894,70 +894,338 @@
 
 <h2 id="overview">Overview</h2>
 <p>This page is for describing the Application Programming Interface for controlling the Sable arm system control board. The arm control board is designed to use a UART serial interface for 7 different message types.</p>
-<p>Message type 1 - Enable/Disable robot arm
-|               |<strong>Byte 1</strong>|<strong>Byte 2</strong>|
-|---------------|----------|----------|
-| Variable name | msg_type | EN       |
-| Variable type | uint8_t  | uint8_t  |
-| Min value     | 1        | 0        |
-| Max value     | 7        | 1        |
-| Example       | 1        | 1        |</p>
-<p>Message type 2 - State of robot arm
-|               |<strong>Byte 1</strong>|<strong>Byte 2</strong>|
-|---------------|----------|----------|
-| Variable name | msg_type | armIsOn  |
-| Variable type | uint8_t  | uint8_t  |
-| Min value     | 1        | 0        |
-| Max value     | 7        | 1        |
-| Example       | 2        | 1        |</p>
-<p>Message type 3 - Position offest from arm end effector position X, Y, Z
-|               |<strong>Byte 1</strong>|<strong>Byte 2</strong>|<strong>Byte 3</strong>|<strong>Byte 4</strong>|
-|---------------|----------|----------|----------|----------|
-| Variable name | msg_type | X_pos    | Y_pos    | Z_pos    |
-| Variable type | uint8_t  | uint8_t  | uint8_t  | uint8_t  |
-| Min value     | 1        | 0        | 0        | -10      |
-| Max value     | 7        | 60       | 60       | 60       |
-| Example       | 3        | 34       | 10       | 15       |</p>
-<p>Message type 4 - Arm success/failure to reach position
-|               |<strong>Byte 1</strong>|<strong>Byte 2</strong>|<strong>Byte 3</strong>|<strong>Byte 4</strong>|<strong>Byte 5</strong>|
-|---------------|----------|----------|----------|----------|----------|
-| Variable name | msg_type | X_pos    | Y_pos    | Z_pos    |state     |
-| Variable type | uint8_t  | uint8_t  | uint8_t  | uint8_t  |uint8_t   |
-| Min value     | 1        | 0        | 0        | -10      |0         |
-| Max value     | 7        | 60       | 60       | 60       |1         |
-| Example       | 4        | 34       | 10       | 15       |1         |</p>
-<p>Message type 5 - Arm collect/deposit sample
-|               |<strong>Byte 1</strong>|<strong>Byte 2</strong>|
-|---------------|----------|----------|
-| Variable name | msg_type | ser_claw |
-| Variable type | uint8_t  | uint8_t  |
-| Min value     | 1        | 0        |
-| Max value     | 8        | 1        |
-| Example       | 5        | 0        |</p>
-<p>Message type 6 - Arm collection/deposit completed
-|               |<strong>Byte 1</strong>|<strong>Byte 2</strong> |<strong>Byte 3</strong> |
-|---------------|----------|-----------|-----------|
-| Variable name | msg_type | collected | deposited |
-| Variable type | uint8_t  | uint8_t   | uint8_t   |
-| Min value     | 1        | 0         | 0         |
-| Max value     | 8        | 1         | 1         |
-| Example       | 6        | 0         | 1         |</p>
-<p>Message type 7 - Collection finished, Drive OK to move
-|               |<strong>Byte 1</strong>|<strong>Byte 2</strong>|
-|---------------|----------|----------|
-| Variable name | msg_type | DRV_OK   |
-| Variable type | uint8_t  | uint8_t  |
-| Min value     | 1        | 0        |
-| Max value     | 8        | 1        |
-| Example       | 7        | 0        |</p>
-<p>Message type 8 - Undefined message received
-|               |<strong>Byte 1</strong>|<strong>Byte 2</strong>|
-|---------------|----------|----------|
-| Variable name | msg_type | SRC_ID   |
-| Variable type | uint8_t  | uint8_t  |
-| Min value     | 1        | 0        |
-| Max value     | 8        | 0        |
-| Example       | 8        | 0        |</p>
+<p><strong>Message type 1 - Enable/Disable robot arm</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Byte 1</strong></th>
+<th><strong>Byte 2</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable name</td>
+<td>msg_type</td>
+<td>EN</td>
+</tr>
+<tr>
+<td>Variable type</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min value</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max value</td>
+<td>7</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Message type 2 - State of robot arm</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Byte 1</strong></th>
+<th><strong>Byte 2</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable name</td>
+<td>msg_type</td>
+<td>armIsOn</td>
+</tr>
+<tr>
+<td>Variable type</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min value</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max value</td>
+<td>7</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Message type 3 - Position offest from arm end effector position X, Y, Z</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Byte 1</strong></th>
+<th><strong>Byte 2</strong></th>
+<th><strong>Byte 3</strong></th>
+<th><strong>Byte 4</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable name</td>
+<td>msg_type</td>
+<td>X_pos</td>
+<td>Y_pos</td>
+<td>Z_pos</td>
+</tr>
+<tr>
+<td>Variable type</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min value</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>-10</td>
+</tr>
+<tr>
+<td>Max value</td>
+<td>7</td>
+<td>60</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>3</td>
+<td>34</td>
+<td>10</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Message type 4 - Arm success/failure to reach position</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Byte 1</strong></th>
+<th><strong>Byte 2</strong></th>
+<th><strong>Byte 3</strong></th>
+<th><strong>Byte 4</strong></th>
+<th><strong>Byte 5</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable name</td>
+<td>msg_type</td>
+<td>X_pos</td>
+<td>Y_pos</td>
+<td>Z_pos</td>
+<td>state</td>
+</tr>
+<tr>
+<td>Variable type</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min value</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>-10</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max value</td>
+<td>7</td>
+<td>60</td>
+<td>60</td>
+<td>60</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>4</td>
+<td>34</td>
+<td>10</td>
+<td>15</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Message type 5 - Arm collect/deposit sample</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Byte 1</strong></th>
+<th><strong>Byte 2</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable name</td>
+<td>msg_type</td>
+<td>ser_claw</td>
+</tr>
+<tr>
+<td>Variable type</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min value</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max value</td>
+<td>8</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>5</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Message type 6 - Arm collection/deposit completed</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Byte 1</strong></th>
+<th><strong>Byte 2</strong></th>
+<th><strong>Byte 3</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable name</td>
+<td>msg_type</td>
+<td>collected</td>
+<td>deposited</td>
+</tr>
+<tr>
+<td>Variable type</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min value</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max value</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Message type 7 - Collection finished, Drive OK to move</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Byte 1</strong></th>
+<th><strong>Byte 2</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable name</td>
+<td>msg_type</td>
+<td>DRV_OK</td>
+</tr>
+<tr>
+<td>Variable type</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min value</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max value</td>
+<td>8</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>7</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Message type 8 - Undefined message received</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Byte 1</strong></th>
+<th><strong>Byte 2</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable name</td>
+<td>msg_type</td>
+<td>SRC_ID</td>
+</tr>
+<tr>
+<td>Variable type</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min value</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max value</td>
+<td>8</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>8</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
 
 
 
