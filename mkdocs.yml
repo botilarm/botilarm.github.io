@@ -56,6 +56,19 @@ extra_javascript:
  - javascripts/mathjax.js
  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     
+nav:
+  - Home: index.md
+  - 01 Requirements: 01-Requirements/Requirements.md
+  - 02 Block-Diagram: 02-Concept-Design/Design.md
+  - 03 Component Selection: 03-Project-Requirements/Project-requirements.md
+  - 04 BOM: 04 Team Block Diagram, Process Diagram, and Message Structure/Team-Diagram.md
+  - 05 Schematic: 05-Design-Review/Design-Review.md
+  - 06 PCB: 06-Prototype/Prototype.md
+  - 07 API: 07-Version 2.0/Version2.md
+  - 08 Hardware V2.0: 08-Hardware-V2.0/Hardware-V2.0.md
+  - 09 Resources: 09-Resources/Resources.md
+  - 10 Reflection: 10-Reflection/Reflection.md
+
 not_in_nav: |
   static
   
@@ -68,13 +81,3 @@ extra:
       link: /2026_spring
       name: 2023 Site    
 
-nav:
-  - Home: index.md
-  - 01 Organization: 01-Organization/Team-Organization.md
-  - 02 Concept Design: 02-Concept-Design/Design.md
-  - 03 Project Requirements: 03-Project-Requirements/Project-requirements.md
-  - 04 Team Block Diagram: 04 Team Block Diagram, Process Diagram, and Message Structure/Team-Diagram.md
-  - 05 Design Review: 05-Design-Review/Design-Review.md
-  - 06 Prototype: 06-Prototype/Prototype.md
-  - 07 Version 2.0: 07-Version 2.0/Version2.md
-  - Appendix: Appendix/appendix.md

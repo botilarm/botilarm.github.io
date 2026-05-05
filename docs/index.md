@@ -11,23 +11,25 @@ as part of<br>
 for<br>
 <font size= "5"> Team 303 </font><br>
 
-**Submission: March 6, 2026**
+**Submission: May 04, 2026**
 </center>
 
 ## Introduction
+This datasheet describes the Robot Arm subsystem of SABLE, a ground exploration and rescue robot.
 
-* **This needs to be updated so that a reader gets an idea of the purpose of this datasheet.**
+link to SABLE: [https://egr314-s-2026-303.github.io/](https://egr314-s-2026-303.github.io/)
 
 ### Project Summary
+Our project was intended to be a ground level exploration robot that can be controlled remotely, collect and deposit samples for testing, and receive data from the outside world. 
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://egr314-s-2026-303.github.io/)
+This subsystem was intended to be a robotic arm that could collect and deposit samples of small objects, but due to time constraints and budget errors, the subsystem functionality was reduced to a single stepper motor and controller.
 
-### My Contribution
+However, it is still possible to connect servo motors to complete the articulated robot arm.
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+To read the full project summary on the team page, please click the link to SABLE above.
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/04-BOM/BOM/) section of the datasheet.
-
->Continue for all the remaining/missing sections.
+**Individual datasheet links:**
+[Project requirements page]() : list of project requirements for this subsystem.
+Block Diagram : simplified diagram of project showing components and how they are connected.
+Component Selection : decision making for components in project.
+BOM : list of hardware components in project.
