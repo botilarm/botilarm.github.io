@@ -10,17 +10,3 @@ blockquote{
         color: var(--md-typeset-color);
     }
 }
-
-.md-tabs__list {
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: thin;
-}
-
-.md-tabs__item {
-  flex: 0 0 auto;
-}
-
-.md-tabs__list {
-  scroll-behavior: smooth;
-}
