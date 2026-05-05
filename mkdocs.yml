@@ -61,10 +61,10 @@ nav:
   - 01 Requirements: 01-Requirements/Requirements.md
   - 02 Block-Diagram: 02-Concept-Design/Design.md
   - 03 Component Selection: 03-Project-Requirements/Project-requirements.md
-  - 04 BOM: 04 Team Block Diagram, Process Diagram, and Message Structure/Team-Diagram.md
-  - 05 Schematic: 05-Design-Review/Design-Review.md
-  - 06 PCB: 06-Prototype/Prototype.md
-  - 07 API: 07-Version 2.0/Version2.md
+  - 04 BOM: 04-BOM/BOM.md
+  - 05 Schematic: 05-Schematic/schematic.md
+  - 06 PCB: 06-PCB/PCB.md
+  - 07 API: 07-API/API.md
   - 08 Hardware V2.0: 08-Hardware-V2.0/Hardware-V2.0.md
   - 09 Resources: 09-Resources/Resources.md
   - 10 Reflection: 10-Reflection/Reflection.md
