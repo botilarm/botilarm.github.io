@@ -26,5 +26,5 @@ The PCB as a PDF download is available [*here*](sable_arm_PCB.pdf), and the Zip 
 
 Below is the latest PCB design which you can view as layers
 
-<object data="https://botilarm.github.io/05-Schematic/sable_arm_PCB.pdf" type="application/pdf" width="100%" height="900px">
-      <p>Unable to display PDF file. <a href="https://botilarm.github.io/05-Schematic/sable_arm_PCB.pdf">Download</a> instead.</p>
+<object data="https://botilarm.github.io/06-Schematic/sable_arm_PCB.pdf" type="application/pdf" width="100%" height="900px">
+      <p>Unable to display PDF file. <a href="https://botilarm.github.io/06-Schematic/sable_arm_PCB.pdf">Download</a> instead.</p>
