@@ -9,11 +9,11 @@ This page is for describing the Application Programming Interface for controllin
 
 |                 | **Byte 1** | **Byte 2** |
 | --------------- | ---------- | ---------- |
-| Variable name | msg_type | EN       |
-| Variable type | uint8_t  | uint8_t  |
-| Min value     | 1        | 0        |
-| Max value     | 7        | 1        |
-| Example       | 1        | 1        |
+| Variable name   | on/FDF..   | EN       |
+| Variable type   | uint8_t    | uint8_t  |
+| Min value       | 1          | 0        |
+| Max value       | 7          | 1        |
+| Example         | 1          | 1        |
 
 **Message type 2 - State of robot arm**
 
