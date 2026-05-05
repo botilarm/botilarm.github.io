@@ -1,34 +1,3 @@
----
-title: Application Programming Interface
----
-
-## Overview
-This page is for describing the Application Programming Interface for controlling the Sable arm system control board. The arm control board is designed to use a UART serial interface for 2 different message types, with a third message for debugging, displayed to the HMI interface which indicates that the arm is in dir, speed, and revs mode.
-
-**Message type 1 - Enable/Disable robot arm**
-
-|                 | **Byte 1** |
-| --------------- | ---------- |
-| Variable name   | armIsOn    |
-| Variable type   | bytearray  |
-| Min value       | 0          |
-| Max value       | 1          |
-| Example         | 1          |
-
-**Message type 2 - Direction, Speed, and Revolutions**
-
-|               |**Byte 1**|**Byte 2**|**Byte 3**|
-|---------------|----------|----------|----------|
-| Variable name |    DIR   | SPEED    | REVS     |
-| Variable type | uint8_t  | uint8_t  | uint8_t  |
-| Min value     | 0        | 0        | 0        |
-| Max value     | 1        | 9        | 9        |
-| Example       | 1        | 6        | 9        |
-
-## Microcontroller Code
-Shown below is the [main.py](main.py) microypthon code for the esp32. It uses the TMC2209_ESP32 library found here: [https://github.com/kjk25/TMC2209_ESP32](https://github.com/kjk25/TMC2209_ESP32).
-
-```
 from TMC_2209_StepperDriver import *
 import ssl
 import uasyncio as asyncio
@@ -199,7 +168,14 @@ print("---\n---")
         
 async def main():
     #Stays here indefinitely becasue receiver is an infinite loop
-    await receiver()
+    task = asyncio.create_task(receiver())
+    while True:
+        uart.write(b'AZAKFYB')
+        await asyncio.sleep(1)
+        uart.write(b'AZAKSYB')
+        await asyncio.sleep(0.5)
+        uart.write(b'AZAKRYB')
+        await asyncio.sleep(1)
     
 try:
     #run main code
@@ -209,4 +185,3 @@ finally:
     loop = asyncio.get_event_loop()
     loop.close
     asyncio.new_event_loop()
-```
