@@ -13,5 +13,5 @@ This is the bill of materials (BOM) section which describes all the components u
 You can download the BOM as a pdf [here](https://botilarm.github.io/04-BOM/sable_arm_BOM.pdf).
 
 ## Bill of Materials
-<object data="https://botilarm.github.io/04-BOM/sable_arm_BOM.pdf" type="application/pdf" width="200%" height="500px">
+<object data="https://botilarm.github.io/04-BOM/sable_arm_BOM.pdf" type="application/pdf" width="100%" height="500px">
       <p>Unable to display PDF file. <a href="https://botilarm.github.io/04-BOM/sable_arm_BOM.pdf">Download</a> instead.</p>
