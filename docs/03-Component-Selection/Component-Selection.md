@@ -28,6 +28,7 @@ The following sections are the selected major components necessary for the arm s
 
 **Selected component: LM2592HVS-5.0 IC REG BUCK 5.0V 2A DDPAK**
 ![](5vreg2.png)
+
 * $2.00/each
 * [link to product](https://www.digikey.com/en/products/detail/umw/LM2592HVS-5-0/24889665)
 * **Reasoning:** This regulator fulfills the need for a regulator to supply power for 5V servos which control 3/4 joints on the robot arm, and the T0-263-5 package has better heat dissipation than other options.
@@ -44,7 +45,9 @@ The following sections are the selected major components necessary for the arm s
 | ![](stepper2.png)<br> 42BYG40B-18T42 STEPPER MOTOR HYBRID BIPOLAR 2.25VDC NEMA 17<br> (unknown price)<br>[link to product](https://www.kysanelectronics.com/Products/cat_pro_rev_inv.php?recordID=6757)|\* 2.25V rating is well below supply voltage.<br>\* Already in posession of this motor.<br>\* Bipolar motor can be driven by selected TMC2209 driver.| \* Motor is no longer be supplied or listed on manufacturer's catalog.|
 
 **Selected component: 42BYG40B-18T42 STEPPER MOTOR HYBRID BIPOLAR 2.25VDC NEMA 17**
-![](stepper2.png)<br>
+
+![](stepper2.png)
+
 * [link to product](https://www.kysanelectronics.com/Products/cat_pro_rev_inv.php?recordID=6757)
 * **Reasoning:** With not as much money in the budget left over for the stepper motor, this motor works well with 12V supply voltage, is bipolar, and was already extracted from an old 3D printer. This motor will control the first joint of the robot arm.
 
@@ -60,6 +63,7 @@ The following sections are the selected major components necessary for the arm s
 
 **Selected component: TMC2209-LA-T**
 ![](controller5.png)
+
 * 5.36/each
 * [link to product](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC2209-LA-T/10232491)
 * **Reasoning:** The TMC2209 fulfills the serial communication requirements of the project while being relatively inexpensive, easy to understand how to setup, and usage of it is well documented and a library for micropython is available.
@@ -76,6 +80,7 @@ The following sections are the selected major components necessary for the arm s
 
 **Selected component: SER0039 SERVOMOTOR RC 5V 9G METAL GEAR**
 ![](SERVO3.png)
-* $5.90/each<br>
+
+* $5.90/each
 * [link to product](https://www.digikey.com/en/products/detail/dfrobot/SER0039/7087152)<br>
 * **Reasoning:** The other considered servomotors have enticing features but would require a non-standard and expensive 6V regulator with at least 1A of output because all three servos in a 3 degree of freedom manipulator stalled would pull ~900mA total. This one operates at 5V making it easier to select a buck converter that can supply enough current for it.

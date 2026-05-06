@@ -26,7 +26,7 @@ This page is for describing the Application Programming Interface for controllin
 | Example       | 1        | 6        | 9        |
 
 ## Microcontroller Code
-Shown below is the [main.py](main.py) microypthon code for the esp32. It uses the TMC2209_ESP32 library found here: [https://github.com/kjk25/TMC2209_ESP32](https://github.com/kjk25/TMC2209_ESP32).
+Shown below is the [main.py](main.py) microypthon code for the esp32. It uses the TMC2209_ESP32 library found here: [https://github.com/kjk25/TMC2209_ESP32](https://github.com/kjk25/TMC2209_ESP32), with the only modification being that all the python files are in the same directory as main.py.
 
 ```
 from TMC_2209_StepperDriver import *

@@ -2,7 +2,7 @@
 title: Hardware V2.0
 ---
 
-# Hardware V2.0
+## Overview
 This page is dedicated to describing the top 5 improvements to version 1.0 of the hardware design to be implemented in version 2.0, listed from most important to least important.
 
 >Note: some of the changes below to hardware have been implemented in the second version of the PCB design, shown [here](https://botilarm.github.io/06-PCB/pcb/).
