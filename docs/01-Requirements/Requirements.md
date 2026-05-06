@@ -10,7 +10,7 @@ The following table documents the requirements for the arm system of the ground 
 | Surface mounted, 3.3V switching power regulator | 3.2 Volts | 3.3 Volts | NO |
 | Surface mounted microcontroller | uses 1 PIC or ESP | uses ESP32 | NO |
 | Wireless Communication | Able to send or receive a Wi-Fi data | Send and receive Wi-Fi Data to MQTT | Yes |
-| I2C or SPI | At least one actuator uses I2C or SPI to communicate with microcontroller | same as MoT | NO |
+| Serial communication | At least one actuator is controlled via serial communication with microcontroller | same as MoT | NO |
 | Motors for arm must be permitted actuators | Motor creates outside motion, requires custom non-trivial interface circuit or filtered analog input to connect to micrcontroller | Creates outside motion and uses custom non-trivial interface circuit to connect to microcontroller. | NO |
 | Software control of arm must not simply toggle a digital pin on and off. | Microcontroller does inverse kinematics to determine input to motors. | same as MoT | NO |
 | Stable while moving | Arm can still hold objects while driving at least 5 mph over dirt and gravel. | Arm can still hold objects while driving at least 10 mph over dirt and gravel | NO |
