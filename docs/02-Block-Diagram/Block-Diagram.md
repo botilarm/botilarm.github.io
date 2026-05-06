@@ -18,8 +18,8 @@ tags:
 
 ### How block diagram meets requirements
 The block diagram meets the requirements by including:
-1. a 3.3V switching regulator;
-2. the esp32 which is intended to be surface mount;
-3. UART communication interface for WiFi board and HMI to control robot arm, thus wireless control and HMI control is present;
-4. all the joint actuators required for a robot arm to pick up objects and flip over the robot, all permitted due to one being a stepper motor and the servos being extra to class requirements;
-5. a battery to provide 12V to the 3.3V switching regulator.
+1. a 3.3V switching regulator;<br>
+2. the esp32 which is intended to be surface mount;<br>
+3. UART communication interface for WiFi board and HMI to control robot arm, thus wireless control and HMI control is present;<br>
+4. all the joint actuators required for a robot arm to pick up objects and flip over the robot, all permitted due to one being a stepper motor and the servos being extra to class requirements;<br>
+5. a battery to provide 12V to the 3.3V switching regulator.<br>
