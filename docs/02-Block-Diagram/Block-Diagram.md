@@ -17,7 +17,7 @@ tags:
 * The 12V source can also be a 9V source if using the specific 3A power supply provided in class, which was done many times for debugging, so there is the option provided in the block diagram for bulk power.
 
 ### How block diagram meets requirements
-The block diagram meets the requirements by including:
+The block diagram meets the requirements by including:<br>
 1. a 3.3V switching regulator;<br>
 2. the esp32 which is intended to be surface mount;<br>
 3. UART communication interface for WiFi board and HMI to control robot arm, thus wireless control and HMI control is present;<br>
