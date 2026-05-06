@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://botilarm.github.io/</loc>
-         <lastmod>2026-05-05</lastmod>
+         <lastmod>2026-05-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://botilarm.github.io/01-Requirements/Requirements/</loc>
-         <lastmod>2026-05-05</lastmod>
+         <lastmod>2026-05-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://botilarm.github.io/02-Block-Diagram/Block-Diagram/</loc>
-         <lastmod>2026-05-05</lastmod>
+         <lastmod>2026-05-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://botilarm.github.io/03-Component-Selection/Component-Selection/</loc>
-         <lastmod>2026-05-05</lastmod>
+         <lastmod>2026-05-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://botilarm.github.io/03-Component-Selection/Power-Budget/</loc>
-         <lastmod>2026-05-05</lastmod>
+         <lastmod>2026-05-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://botilarm.github.io/04-BOM/BOM/</loc>
-         <lastmod>2026-05-05</lastmod>
+         <lastmod>2026-05-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://botilarm.github.io/05-Schematic/schematic/</loc>
-         <lastmod>2026-05-05</lastmod>
+         <lastmod>2026-05-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://botilarm.github.io/06-PCB/pcb/</loc>
-         <lastmod>2026-05-05</lastmod>
+         <lastmod>2026-05-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://botilarm.github.io/07-API/API/</loc>
-         <lastmod>2026-05-05</lastmod>
+         <lastmod>2026-05-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

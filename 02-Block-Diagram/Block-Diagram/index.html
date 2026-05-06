@@ -574,6 +574,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Arm System Block Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#block-diagram-decision-making-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Block diagram decision making process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-block-diagram-meets-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      How block diagram meets requirements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -855,6 +879,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Arm System Block Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#block-diagram-decision-making-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Block diagram decision making process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-block-diagram-meets-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      How block diagram meets requirements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -884,6 +932,22 @@
 
 <h2 id="arm-system-block-diagram">Arm System Block Diagram</h2>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../block_diagram.png" data-desc-position="bottom"><img alt="" src="../block_diagram.png"></a></p>
+<h3 id="block-diagram-decision-making-process">Block diagram decision making process</h3>
+<ul>
+<li>The robot arm is intended to have 4 joints, as shown in Fig. 16 on the team concept design page linked <a href="https://egr314-s-2026-303.github.io/02-Concept-Design/Design/">here</a>. Only one joint needs to have more than 180 degrees of rotation, the base joint that rotates the entire arm, and needs to be serially controlled as per class requirements. Thus, there is one stepper motor controlled by the TMC2209 stepper driver and three servo motors controlled by PWM signals.</li>
+<li>In order to control the robot arm, it must communicate with the HMI and WiFi interfaces, which are managed by <a href="https://lryan5.github.io/">Lia's board</a> and <a href="https://msande84.github.io/msande84.EGR314.github.io/">Matthew's board</a> respectively, thus UART1 is reserved for this. Although UART1 and UART2 are assigned to GPIO pins in the final design, I decided to show them as separate blocks in the ESP32 block to show that it is separate from the PWM pins.</li>
+<li>UART2 is reserved for communicating via single-wire UART to the TMC2209.</li>
+<li>The USB port is also a separate block to show that the ESP32 is programmable.</li>
+<li>The 3.3V switching power supply does not directly power the servos and the stepper motor and controller, but specific pins on these devices use 3.3V from a microcontroller, thus the area governed by the power supply overlap those components halfway. The 5V and 12V sources supply the bulk power the servos and stepper motor respectively.</li>
+<li>The 12V source can also be a 9V source if using the specific 3A power supply provided in class, which was done many times for debugging, so there is the option provided in the block diagram for bulk power.</li>
+</ul>
+<h3 id="how-block-diagram-meets-requirements">How block diagram meets requirements</h3>
+<p>The block diagram meets the requirements by including:
+1. a 3.3V switching regulator;
+2. the esp32 which is intended to be surface mount;
+3. UART communication interface for WiFi board and HMI to control robot arm, thus wireless control and HMI control is present;
+4. all the joint actuators required for a robot arm to pick up objects and flip over the robot, all permitted due to one being a stepper motor and the servos being extra to class requirements;
+5. a battery to provide 12V to the 3.3V switching regulator.</p>
 
 
 
